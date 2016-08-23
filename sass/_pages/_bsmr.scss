@@ -1,0 +1,1007 @@
+.bsmr-signup footer {
+	display: none;
+}
+
+.bsmr-signup {
+	background: #1C1C1C;
+	background-image: url(images/investing/bg.jpg);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-color: #464646;
+
+  	@include media-query(small) {
+  		background-image: none;
+  		background-color: #1C1C1C;
+  	}
+}
+
+.bsmr-email-button {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: #1C1C1C;
+	padding: 23px 50px 23px 23px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'dinBold', sans-serif;
+	font-size: 0.9em;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 15px;
+		height: 19px;
+		background-image: url('images/investing/arrow-right.svg');
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 22px;
+		right: 15px;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	@include media-query(small) {
+		background: #000;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 15px 15px;
+
+		&:after {
+			top: 16px;
+		}
+	}
+}
+
+#bsmr-signup-main {
+	margin-top: 0;
+
+	.background-image {
+		width: 110%;
+		height: auto;
+		top: 0;
+		left: 0;
+	}
+
+	.bsmr-signup-sidebar {
+		width: 400px;
+		box-sizing: border-box;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 5;
+		background: #1C1C1C;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 3px;
+			height: 100vh;
+			background: rgba(0, 0, 0, 0.4);
+			position: absolute;
+			right: -3px;
+			top: 0;
+		}
+
+		h3 {
+			width: 100%;
+			border-bottom: 1px solid #474747;
+			display: block;
+			font-family: 'dinBold', sans-serif;
+			color: #fff;
+			padding: 5px 25px 20px 25px;
+			font-size: 1em;
+			box-sizing: border-box;
+		}
+
+		h2 {
+			color: #fff;
+			padding: 10px 25px;
+			font-size: 24px;
+		}
+
+		p {
+			padding: 15px 25px;
+			font-size: 1.05em;
+		}
+
+		p.paragraph-one {
+			padding-top: 0px;
+			padding-bottom: 0;
+		}
+
+		p.paragraph-two {
+			padding-top: 0;
+		}
+
+		p:last-child {
+			padding-top: 0;
+		}
+
+		form p {
+			padding: 0 25px;
+		}
+	}
+
+	.bsmr-signup-draw {
+		width: 30%;
+		max-width: 500px;
+		height: 100vh;
+		background: #212121;
+		position: absolute;
+		overflow-y: scroll;
+		top: 0;
+		left: 400px;
+		animation-name: investDraw;
+		animation-timing-function: ease-in-out;
+   		animation-duration: 0.7s;
+   		-ms-transform: translate(-1700px); /* IE 9 */
+   		-webkit-transform: translate(-1700px); /* Safari */
+    	transform: translate(-1700px);
+    	-webkit-transition: all 0.7s ease-in-out;
+		moz-transition: all 0.7s ease-in-out;
+		o-transition: all 0.7s ease-in-out;
+		transition: all 0.7s ease-in-out;
+
+   		&.active {
+   			-ms-transform: translate(0); /* IE 9 */
+   			webkit-transform: translate(0); /* Safari */
+   			transform: translate(0);
+   		}
+
+		// &:after {
+		// 	content: "";
+		// 	display: block;
+		// 	width: 3px;
+		// 	height: 100vh;
+		// 	background: rgba(0, 0, 0, 0.4);
+		// 	position: absolute;
+		// 	right: -3px;
+		// 	top: 0;
+		// }
+
+		h3.bsmr-signup-title {
+			width: 100%;
+			border-bottom: 1px solid #474747;
+			display: block;
+			color: #fff;
+			padding: 5px 25px 20px 25px;
+			font-size: 1em;
+			box-sizing: border-box;
+		}
+	}
+
+	.bsmr-signup-draw .draw-holder {
+		padding: 25px;
+	}
+
+	.bsmr-email-address {
+		color: $Red;
+		text-align: center;
+		padding: 25px 0;
+		font-size: 1em;
+	}
+
+	.button-holders {
+		box-sizing: border-box;
+		padding: 25px;
+	}
+
+	.wpcf7-list-item span {
+		text-transform: none;
+	}
+
+	h4 {
+		padding: 0 25px;
+		margin-top: 0;
+	}
+
+	.wpcf7-form-control-wrap {
+		position: relative;
+	}
+
+	.wpcf7-not-valid-tip {
+		top: -8px;
+		right: 15px;
+		font-size: 0.8em;
+		position: absolute;
+	}
+
+	.menu-684 .wpcf7-not-valid-tip {
+		top: -8px;
+		right: 35px;
+		font-size: 0.8em;
+		position: absolute;
+	}
+
+	div.wpcf7-response-output {
+		float: left;
+		width: 235px;
+		padding-top: 20px;
+		display: block;
+		margin-top: 10px !important;
+		margin-left: 10px !important;
+		display: block;
+	}
+
+	.bsmr-signup-button {
+		margin-top: 25px;
+		box-sizing: border-box;
+		width: 100%;
+		position: relative;
+		padding: 17px 20px;
+		background-color: $Red;
+		background-image: url('images/investing/arrow-right.svg');
+		background-repeat: no-repeat;
+		background-size: 12px;
+		background-position: 93% 17px;
+		margin-bottom: 30px;
+		display: block;
+		text-transform: uppercase;
+		font-family: 'dinBold', sans-serif;
+		color: #fff;
+		cursor: pointer;
+		-webkit-transition: all 0.3s ease-in-out;
+		moz-transition: all 0.3s ease-in-out;
+		o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		.active {
+			background-color: $Green;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			height: 3px;
+			position: absolute;
+			background: rgba(0, 0, 0, 0.4);
+			bottom: 0px;
+			left: 0;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			height: 3px;
+			position: absolute;
+			background: RGBA(252, 92, 94, 0.2);
+			bottom: -3px;
+			left: 0;
+		}
+
+		&:hover {
+			background-color: darken($Red, 3%);
+			text-decoration: none;
+		}
+	}
+
+	.g--two--third {
+   		box-sizing: border-box;
+   	}
+
+	header:after {
+		content: "";
+		display: block;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 4px;
+		background: rgba(0, 0, 0, 0.3);
+	}
+
+	header h1 {
+		color: #212121;
+	}
+
+	h3 {
+		color: #fff;
+		line-height: 1.5em;
+		clear: both;
+	}
+
+	.bsmr-signup-form {
+		padding: 0 25px;
+		padding-top: 15px;
+		box-sizing: border-box;
+		margin-top: -8px;
+		display: block;
+		height: auto;
+		overflow: auto;
+	}
+
+	.bsmr-signup-sidebar .bsmr-signup-form p {
+		padding: 0px 0;
+	}
+
+	.bsmr-signup-form h3 {
+		margin-top: 10px;
+	}
+
+	.bsmr-signup-message {
+		width: 100%;
+		height: auto;
+		border-bottom: 1px solid #454545;
+	}
+
+	h3.bold {
+		font-family: 'dinBold', sans-serif;
+	}
+
+	.g--two--third {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	p {
+		margin-top: 0;
+		color: #fff;
+		overflow: auto;
+		height: auto;
+	}
+
+	p.form-description {
+		width: 100%;
+		font-size: 1.1em;
+	}
+
+	h4 {
+		color: #fff;
+	}
+
+	.wpcf7-list-item {
+		width: calc(33.3% - 15px);
+		display: block;
+		float: left;
+		margin-left: 4px;
+		padding-bottom: 1px;
+		font-size: 1.1em;
+
+		.wpcf7-list-item-label {
+			margin-left: 15px;
+			color: #fff;
+			font-size: 1.1em;
+			padding: 0;
+		}
+	}
+
+	.radio-column {
+		width: calc(50% - 15px);
+		display: block;
+		float: left;
+		margin-left: 4px;
+		padding-bottom: 1px;
+		padding-bottom: 10px;
+	}
+
+	.radio-column .wpcf7-list-item {
+		width: 100%;
+		display: block;
+		float: left;
+		margin-left: 4px;
+		padding-bottom: 1px;
+	}
+
+	.second-bsmr-signup .wpcf7-list-item {
+		width: calc(50% - 15px);
+		margin-bottom: 10px;
+	}
+
+	.second-bsmr-signup .wpcf7-list-item span {
+		display: block;
+		float: left;
+		text-transform: none;
+		font-size: 1.2em;
+		width: 240px;
+	}
+
+	.second-bsmr-signup .wpcf7-list-item input[type="radio"] {
+		float: left;
+		margin-top: 15px;
+		margin-right: 15px;
+	}
+
+	.second-bsmr-signup .wpcf7-list-item.last .wpcf7-list-item-label  {
+		padding-top: 10px;
+	}
+
+	.bsmr-signup-bottom-options {
+		clear: both;
+		width: 100%;
+		display: block;
+		padding-top: 30px;
+		margin-top: 10px;
+		border-top: 1px solid #474747;
+
+		p {
+			float: left;
+		}
+
+		p:last-child {
+			float: right;
+		}
+
+		a {
+			text-decoration: 0;
+			border-bottom: 2px solid #298BFB;
+			color: #fff;
+			float: left;
+			cursor: pointer;
+			width: auto;
+			display: block;
+			padding-top: 5px;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: #298BFB;
+		}
+	}
+
+	input[type="submit"] {
+		background: #298BFB;
+		display: block;
+		border: 0;
+		outline: 0;
+		-webkit-appearance: none;
+		padding: 10px 20px;
+		background: $Red;
+		text-transform: uppercase;
+		float: right;
+		margin-top: 20px;
+		font-family: 'dinBold', sans-serif;
+		width: auto;
+		color: #fff;
+		cursor: pointer;
+		@include border-radius(0px);
+	}
+
+	input[type="submit"]:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 4px;
+		background: rgba(0, 0, 0, 0.3);
+		@include border-radius(0px);
+	}
+
+	input[type="text"], input[type="email"] {
+		background: #151515;
+		border: solid 2px #404040;
+		color: #fff;
+		margin-bottom: 10px;
+		@include border-radius(0px);
+		position: relative;
+		width: calc(100% - 25px);
+		box-sizing: initial;
+		padding: 10px;
+
+		&:focus {
+		   border: solid 2px $Red;
+		   color: $Red;
+		   outline: none;
+		}
+
+		&.filledin {
+			color: #fff;
+			border: solid 2px #404040 !important;
+			background: #151515 !important;
+		}
+	}
+
+	@media screen\0 {
+		input[type="text"], input[type="email"] {
+			min-height: 50px;
+		}
+	}
+
+	textarea {
+		background: #151515;
+		border: solid 2px #404040;
+		color: #fff;
+		margin-bottom: 0;
+		box-sizing:  border-box;
+		padding: 10px 10px;
+		@include border-radius(0px);
+		position: relative;
+		resize: none;
+
+		&:focus {
+		   border: solid 2px #298BFB;
+		   color: #298BFB;
+		   outline: none;
+		}
+
+		&.filledin {
+			color: #298BFB;
+			border: solid 2px #298BFB !important;
+			background: #151515 !important;
+		}
+	}
+
+	.bsmr-submit {
+		position: relative;
+	}
+
+	img.ajax-loader {
+		width: 15px !important;
+		height: 15px !important;
+		position: absolute;
+		right: 110px;
+		top: 33px;
+		padding-right: 15px !important;
+		float: right;
+	}
+
+	.mobile-back-button {
+		display: none;
+	}
+
+	.bsmr-logo-strip {
+		margin-top: 5px;
+		width: 100%;
+		border-top: 1px solid #151515;
+		box-sizing: border-box;
+		height: auto;
+		overflow: auto;
+		padding: 0;
+		padding-top: 15px;
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		padding-bottom: 10px;
+		background: #1C1C1C;
+
+		.partner-logos {
+			width: calc(33.3% - 30px);
+			padding-left: 20px;	
+			margin: 0;
+			float: left;
+			list-style-type: none;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.cc-logo {
+			padding-top: 20px;
+			display: block;
+		}
+
+		.rae-logo {
+			width: 60%;
+			margin: 0 auto;
+			display: block;
+			padding-left: 8px;
+		}
+
+		.bsmr-logo {
+			width: 80%;
+			float: right;
+			padding-top: 7px;
+			display: block;
+		}
+	}
+
+	@include media-query(tablet-landscape) {
+		
+		.bsmr-signup-sidebar { 
+			width: 40%;
+		}
+
+		.bsmr-email-button {
+			position: fixed;
+		}
+
+		.bsmr-signup-draw {
+			width: 40%;
+			left: 40%;	
+		}
+	}
+
+	@include media-query(tablet-portrait) {
+		overflow: scroll;
+		position: relative;
+		height: auto;
+		background: none;
+
+		.bsmr-signup-sidebar {
+			margin-top: 450px;
+		}
+
+		.bsmr-signup-draw {
+			margin-top: 450px;
+		}
+		input[type="submit"] {
+			margin-top: 0px;
+		}
+	}
+
+	@media screen and ( max-height: 690px ){
+    	.bsmr-signup-sidebar p {
+    	 		padding: 3px 25px;
+    	}
+
+    	.bsmr-signup-sidebar input[type="text"], .bsmr-signup-sidebar input[type="email"] {
+    		margin-bottom: 3px;
+    	}
+
+    	.bsmr-signup-sidebar input[type="submit"] {
+    		margin-top: 0px;
+    	}
+
+    	.bsmr-signup-sidebar .bsmr-logo-strip .partner-logos {
+    		// width: calc(25% - 30px);
+    	}
+	}
+
+	@media screen and ( max-height: 635px ){
+		.bsmr-signup-sidebar .bsmr-logo-strip {
+			display: none;
+		}
+	}
+
+	@include media-query(tablet-portrait-and-smaller) {
+		overflow: scroll;
+		position: relative;
+		height: auto;
+		min-height: 100vh;
+
+		.bsmr-signup-sidebar {
+			height: auto;
+			min-height: initial;
+			z-index: 10000;
+			padding-bottom: 0;
+		}
+
+		.bsmr-logo-strip {
+			display: none;
+		}
+
+		.mobile-inactive {
+			overflow: hidden;
+			max-height: 100vh;
+		}
+
+		.radio-column { 
+			width: 100%;
+			padding-bottom: 0;
+		}
+
+		.radio-column:last-child {
+			padding-bottom: 35px;
+		}
+
+		.mobile-back-button {
+			position: fixed;
+			text-decoration: none;
+			text-transform: uppercase;
+			box-sizing: border-box;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background: #151515;
+			height: auto;
+			padding: 13px 35px;
+			cursor: pointer;
+			color: #fff;
+			z-index: 10000;
+			background-image: url('images/investing/arrow-left.svg');
+			background-repeat: no-repeat;
+			background-size: 8px;
+			background-position: 15px 18px;
+		}
+
+		.mobile-back-button.active {
+			display: block;
+		}
+
+		.background-image {
+			display: none;
+		}
+		
+		.bsmr-signup-sidebar { 
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+			padding-bottom: 50px;
+			position: relative;
+
+			
+			&:after {
+				height: auto;
+			}
+
+			h3 {
+				margin: 0;
+				padding: 20px 15px 20px 15px;
+			}
+
+			h4 {
+				padding: 0 15px;
+			}
+
+			h2 {
+				color: #fff;
+				padding: 0px 15px;
+				font-size: 24px;
+			}
+
+			p {
+				padding: 25px 15px;
+				font-size: 1.1em;
+			}
+
+			form p {
+				padding:0 15px;
+			}
+
+			.wpcf7-not-valid-tip {
+				margin-top: 9px;
+			}
+
+		}
+
+		.bsmr-signup-bottom-options a { 
+			display: none;
+		}	
+
+		.bsmr-signup-draw {
+			display: none;
+			position: absolute;
+			z-index: 1000;
+			height: auto;
+			width: 100%;
+			max-width: 100%;
+			left: 0px;
+			padding-bottom: 50px;
+			height: 100vh;
+			z-index: 100000;
+
+			.invest-form {
+				padding: 0 15px;
+			}
+
+			p {
+				font-size: 1.1em;
+			}
+
+			h3.invest-title {
+				padding: 20px 15px 20px 15px;
+			}
+
+			.draw-holder {
+				padding: 15px;
+			}
+
+			h3.invest-margin-above {
+				padding-top: 20px;
+			}
+
+			&:after {
+				display: none;
+			}
+
+			&.active {
+				display: block;
+			    -ms-transform: translate(0); /* IE 9 */
+				webkit-transform: translate(0); /* Safari */
+				transform: translate(0);
+   			}
+
+   			.bsmr-signup-bottom-options { 
+   				padding-bottom: 40px;
+   			}
+
+   			.wpcf7-list-item label {
+   				font-size: 1em;
+   			}
+
+   			.wpcf7-list-item.last {
+   				margin-bottom: 20px;
+   			}
+
+   			.second-bsmr-signup .wpcf7-list-item {
+				width: 100%;
+				margin-bottom: 10px;
+				box-sizing: border-box;
+				font-size: 1.2em;
+				overflow: hidden;
+				margin-left: 0;
+			}
+
+			.wpcf7-list-item.first {
+				margin-top: 0;
+			}
+
+			.second-bsmr-signup .wpcf7-list-item:nth-child(5) span {
+				padding-top: 10px;
+			}
+
+			.second-bsmr-signup .wpcf7-list-item span {
+				display: block;
+				float: left;
+				width: 280px;
+				font-size: 1em;
+			}
+
+			textarea {
+				padding: 15px;
+			}
+		}
+
+		div.wpcf7-response-output {
+			font-size: 0.9em;
+			width: 210px;
+			margin-top: 15px !important;
+			margin-left: 15px !important;
+		}
+
+		.padding-top {
+			padding-top: 20px;
+		}
+
+		.button-holders {
+			box-sizing: border-box;
+			padding: 5px 15px;
+		}
+
+   		.g--two--third {
+   			width: 100%;
+   		}
+
+   		.bsmr-signup-form {
+			margin: 25px 0 25px 0;
+		}
+
+		.bsmr-signup-message { 
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			height: auto;
+			overflow: auto;
+		}
+
+		.wpcf7-list-item {
+			width: 100%;
+		}
+
+		.wpcf7-list-item.first {
+			margin-top: 20px;
+		}
+
+		p.form-description {
+			padding-bottom: 0px;
+		}
+
+		.bsmr-signup-form p.form-description {
+			padding-bottom: 0px;
+		}
+
+		h3 {
+			margin: 10px 0 25px 0;
+		}
+
+		input[type="text"], input[type="email"] {
+			margin-bottom: 0;
+		}
+
+		fieldset.form-half:last-child {
+			margin-bottom: 0;
+			padding-bottom: 15px;
+		}
+    }
+
+    @include media-query(small) {
+    	background: #1C1C1C;
+    	padding-bottom: 0;
+
+    	form {
+    		height: auto;
+    		overflow: auto;
+    	}
+
+    	.bsmr-submit {
+    		padding-top: 30px;
+    	}
+
+    	.bsmr-signup-sidebar { 
+    		padding-bottom: 0;
+    		padding-top: 50px;
+    	}
+
+    	.bsmr-signup-draw {
+    		padding-top: 50px;
+    	}
+
+    	.bsmr-logo-strip {
+    		margin-top: 25px;
+    		position: relative;
+    		display: block !important;
+    	}
+
+    	input[type="submit"] {
+    		margin-top: 25px !important;
+    	}
+    }
+
+    @include media-query(tiny) {
+    	.mobile-back-button {
+    		font-size: 0.9em;
+    	}
+
+		h3 {
+			font-size: 1em;
+		}
+    	
+    	.bsmr-signup-sidebar  {
+    		overflow: scroll;
+
+    		.bsmr-signup-button {
+    			font-size: 0.9em;
+    		}
+
+    		h3 {
+    			font-size: 0.9em;
+    		}
+
+    		p {
+				font-size: 0.9em;
+			}	
+    	}
+
+    	.wpcf7-list-item label {
+    		margin: 8px 0;
+    		
+    	}
+
+    	.wpcf7-list-item .wpcf7-list-item-label {
+			font-size: 0.9em !important;
+    	}
+
+    	div.wpcf7-response-output {
+			font-size: 0.8em;
+			width: 190px;
+			margin-top: 15px !important;
+			margin-left: 15px !important;
+		}
+
+    	.bsmr-signup-draw {
+
+    		.second-bsmr-signup .wpcf7-list-item span {
+    			font-size: 1.1em;
+    			width: 230px;
+    		}
+
+    		h3.bsmr-signup-title {
+    			font-size: 0.9em;
+    		}
+
+    		h3 {
+    			font-size: 0.9em;
+    			margin: 0px;
+    			margin-bottom: 15px;
+    		}
+
+    		p {
+				font-size: 1em;
+			}	
+    	}
+    }
+}

@@ -1,0 +1,326 @@
+#logo {
+  color: $White;
+  letter-spacing: 1px;
+  float: left;
+  padding-top: 15px;
+  font-family: 'dinbold', sans-serif;
+
+  &:hover {
+    text-decoration: none;
+    color: $Green;
+  }
+
+  @include media-query(tablet-portrait-and-smaller) {
+    margin-left: 5%;
+  }
+}
+
+.nav {
+  background-color: #333;
+  height: 55px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+
+  .container {
+    padding-top: 0px;
+
+    @include media-query(tablet-portrait-and-smaller) {
+      padding-bottom:0;
+    }
+  }
+
+  .nav-logo-link {
+    display: block;
+  }
+
+  .nav-logo {
+    float: left;
+    width: auto;
+    height: 70px;
+    padding: 5px 0;
+    @include media-query(tablet-portrait-and-smaller) {
+    padding: 5px 0px 5px 15px;
+    }
+  }
+
+  .menu {
+    padding: 15px 0 0 0;
+    margin: 0;
+    float: right;
+
+    @include media-query(tablet-portrait-and-smaller) {
+      padding: 0;
+      float: none;
+      height: 0;
+      overflow: hidden;
+    }
+
+    a {      
+      color: $White;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $Green;
+        text-decoration: none;
+      }
+    }
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 20px;
+
+      @include media-query(tablet-landscape) {
+        margin: 0 13px;
+      }
+
+    }
+
+    .current_page_item a {
+      color: $Green;
+    }
+  }
+
+  span.menu-btn {
+    cursor: pointer;
+    display: none;
+    color: $White;
+  }
+
+  @include media-query(tablet-portrait-and-smaller) {
+    span.menu-btn {
+      display: block;
+      float: right;
+      margin: 20px 5% 30px 0;
+      
+      img {
+        width: auto;
+        height: 30px;
+      }
+    }
+
+    .menu {
+      clear: both;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      li {
+        background-color: white;
+        display: block;
+        padding: 15px;
+        margin: 0;
+
+        a {
+          color: $Black;
+        }
+      }
+    }
+  }
+}
+
+.opened-nav {
+    padding-top: 0px;
+}
+
+.menu.opened-menu {
+  height: auto;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+/// Localisation Best Case
+
+.local-selector {
+  margin: 10px 0 0 0;
+  float: right;
+  width: intrinsic;
+  min-width: 130px;
+  padding-left: 30px;
+  position: relative;
+  color: $White;
+  text-transform: uppercase;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+  .local-selected {
+    color: #fff;
+    width: intrinsic;
+    display: block;
+    height: 45px;
+    cursor: pointer;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 25px;
+      float: left;
+      height: 25px;
+      margin: 4px 15px 0 0;
+    }
+
+    span {
+      display: block;
+      float: left;
+      margin-top: 5px;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none;   /* Chrome/Safari/Opera */
+      -khtml-user-select: none;    /* Konqueror */
+      -moz-user-select: none;      /* Firefox */
+      -ms-user-select: none;       /* IE/Edge */
+      user-select: none;           /* non-prefixed version, currently
+                                        not supported by any browser */
+    }
+
+    .triangle {
+      display: inline-block;
+      width: 0; 
+      height: 0; 
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid $Green;
+      margin-left: 10px;
+      margin-top: 13px;
+      width: 0px;
+      height: 0px;
+      float: right;
+    }
+
+    &.active .triangle {
+       @include transform (rotate(180deg));
+    }
+  }
+
+  .dropdown {
+    width: intrinsic;
+    background: darken($Black, 20%);
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+
+    li {
+      height: auto;
+      overflow: auto;
+      margin: 0;
+      width: 100%;
+      border-bottom: 1px solid $Black;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        color: $White;
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background: $Green;
+        text-decoration: none;
+      }
+
+      &:hover span {
+         color: $Black;
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+  @include media-query(tablet-portrait-and-smaller) {
+    display: none;
+  }
+}
+
+// Localisation MVP
+
+a.cbc_content {
+  float: right;
+  color: $White;
+  display: block;
+  padding-left: 20px;
+  margin-top: 15px;
+  text-decoration: none;
+
+  &:before {
+    margin-top: 1px;
+    width: 30px;
+    height: 21px;
+    content: "";
+    display: block;
+    float: left;
+    margin-right: 10px;
+    background-image: url(images/svg/flag-nz.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+  }
+}
+
+a.cbc-menu-link {
+  float: right;
+  text-transform: uppercase;
+  color: $White;
+  margin: 15px 19px;
+
+  &:hover {
+    color: $Green;
+    text-decoration: none;
+  }
+}
+
+@include media-query(tablet-portrait-and-smaller) {
+  .main {
+    position: relative;
+    z-index: 1;
+  }
+
+  .opened-nav {
+    padding-top: 260px;
+    // -webkit-transition: margin-top 1s ease-in-out;
+    // -moz-transition: margin-top 1s ease-in-out;
+    // -o-transition: margin-top 1s ease-in-out;
+    // transition: margin-top 1s ease-in-out;
+  }
+}
+
+@include media-query(tablet-portrait-and-smaller) {
+  .nav {
+    height: 55px;
+    #logo {
+      padding-top: 15px;
+    }
+   .menu {
+      padding-top: 15px;
+      @include media-query(tablet-portrait-and-smaller) {
+        padding:0;
+      }
+    }
+
+    a.cbc-menu-link {
+      display: none;
+    }
+
+    span.menu-btn {
+      margin: 20px 5% 20px 0;
+
+      img {
+        height: 15px;
+      }
+    }
+  }
+}
+

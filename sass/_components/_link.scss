@@ -1,0 +1,132 @@
+@mixin filter($distance, $color) {
+  -webkit-box-shadow: 0px $distance 0px $color;
+  -moz-box-shadow:    0px $distance 0px $color;
+  box-shadow:         0px $distance 0px $color;
+
+}
+
+a, a:hover, a:active, a:visited {
+  color: $Black;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+} 
+
+a.button-link {
+  color: $White;
+}
+
+h1 a {
+  &:hover {
+    color: $Green;
+    text-decoration: none;
+  }
+}
+
+h3 a {
+  &:hover {
+    color: $Red;
+    text-decoration: none;
+  }
+}
+
+.blog-post-text a {
+  color: $Red;
+}
+
+.button-link {
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: 'dinbold', sans-serif;
+  display: inline-block;
+  color: $White;
+  text-decoration: none;
+  position: relative;
+  
+  &:link {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    z-index: 50;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+
+  &:active {
+    position: relative;
+    top: 2px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button-green {
+  background: $Green;
+
+  &:hover {
+    background: $GreenSelected;
+  }
+
+  &:before {
+    background: $GreenShadow;
+  }
+}
+
+.button-red {
+  background: $Red;
+
+  &:before {
+    background: $RedShadow;
+  }
+
+  &:hover {
+    background: $RedSelected;
+  }
+}
+
+.link-app-store {
+    float: left;
+    height: 60px;
+    width: 150px;
+    display: block;
+    background: url('images/svg/app-store.svg') no-repeat 0 0;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.link-twitter, .link-facebook, .link-instagram {
+  display: block;
+  height: 45px;
+  width: 45px;
+  float: left;
+  background: url('images/svg/twitter-icon.svg') no-repeat top center;
+  background-size: 100% 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.link-facebook {
+  background: url('images/svg/facebook-icon.svg') no-repeat top center;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+
+.link-instagram {
+  background: url('images/svg/instagram-icon.svg') no-repeat top center;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+

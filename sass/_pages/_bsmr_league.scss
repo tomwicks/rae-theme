@@ -1,0 +1,594 @@
+.bsmr-league footer {
+	display: none;
+}
+
+.bsmr-league {
+	background: #1C1C1C;
+	background-image: url(images/investing/bg-small.jpg);
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-color: #464646;
+
+  	@include media-query(tablet-portrait-and-smaller) {
+  		background-size: 1000px auto;
+  		background-position: -100px 0;
+  	}
+
+  	@include media-query(small) {
+  		background-size: 1000px auto;
+  		background-position: -500px 0;
+  	}
+}
+
+#bsmr-league-main {
+	margin-top: 0;
+	background: 0;
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-bottom: 1px solid RGBA(255, 255, 255, 0.3);
+		margin-top: 0;
+		background: 0;
+
+		h3 {
+			font-size: 1em;
+			color: #fff;
+			font-family: 'dinbold', sans-serif;
+			float: left;
+		}
+
+		a.signup-btn {
+			padding-top: 15px;
+			float: right;
+			font-size: 1em;
+			color: #fff;
+			text-transform: uppercase;
+			position: relative;
+			margin-right: 30px;
+
+			&:after {
+				display: block;
+				content: "";
+				position: absolute;
+				top: 18px;
+				right: -30px;
+				width: 14px;
+				height: 20px;
+				background-image: url('images/investing/arrow-right.svg');
+				background-repeat: no-repeat;
+
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.bsmr-hero {
+		width: 100%;
+		height: auto;
+		display: block;
+		height: auto;
+		position: fixed;
+		top: 150px;
+
+		.g--third {
+			padding: 0;
+			margin-top: 0px;
+			color: #fff;
+
+			h2 {
+				line-height: 1.2;
+			}
+
+			h4 {
+				text-transform: none;
+				font-family: 'dinregular', sans-serif;
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	.bsmr-nav {
+		position: relative;
+		margin-top: 400px;
+		width: 100%;
+		height: auto;
+		overflow: auto;
+
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+
+		ul li {
+			float: left;
+			text-decoration: none;
+			margin: 0;
+			list-style-type: none;
+			padding: 0;
+			margin-right: 25px;
+		}
+
+		.bsmr-menu-btn {
+			display: block;
+			padding: 15px 25px;
+			height: auto;
+			overflow: auto;
+			box-sizing: border-box;
+			background: #303030;
+			color: #fff;
+			font-family: 'dinbold', sans-serif;
+			text-transform: uppercase;
+			cursor: pointer;
+			position: relative;
+		}
+
+		.bsmr-menu-btn.active {
+			background: #212121;
+			z-index: 20;
+		}
+
+		.bsmr-menu-btn:hover {
+			text-decoration: none;
+		}
+	}
+
+	.bsmr-main-section {
+		width: 100%;
+		margin: 0;
+		min-height: 800px;
+		display: block;
+		height: auto;
+		background: #212121;
+		position: relative;
+		z-index: 10;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			background: RGBA(0, 0, 0, 0.3);
+			position: absolute;
+			top: -3px;
+			left: 0;
+		}
+	}
+
+	.league-table {
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: auto;
+		padding: 100px 0 80px 0;
+		margin-top: 0px;
+		border-bottom: 1px solid #404040;
+
+		h4 {
+			margin-top: 12px;
+			float: left;
+			color: #fff;
+		}
+	}
+
+	.league-table-container {
+		width: 100%;
+		height: auto;
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	table.league-table {
+		margin-top: 50px;
+		float: right;
+		width: 100%;
+		clear: both;
+		height: auto;
+		overflow: auto;
+		color: #fff;
+		margin-bottom: 80px;
+
+		tr {
+			border-bottom: 1px solid #404040;
+			position: relative;
+		}
+
+		tr:nth-child(even) {
+			background: #2B2B2B;
+		}
+
+		tr th {
+			text-align: left;
+			font-family: 'dinbold', sans-serif;
+			font-weight: normal;
+			padding: 17px 30px;
+		}
+
+		tr td {
+			padding: 17px 30px;
+		}
+
+		tr td.medal {
+			background-image: url('images/bsmr/medal-plain.svg');
+			background-repeat: no-repeat;
+			background-position: 16px 10px;
+			background-size: 36px 36px;
+			font-family: 'dinbold', sans-serif;
+			color: #212121;
+		}
+
+		tr.row-1 td.medal {
+			background-position: 16px 13px;
+			background-image: url('images/bsmr/medal-gold.svg');
+		}
+
+		tr.row-2 td.medal {
+			background-position: 16px 13px;
+			background-image: url('images/bsmr/medal-silver.svg');
+		}
+
+		tr.row-3 td.medal {
+			background-position: 16px 13px;
+			background-image: url('images/bsmr/medal-bronze.svg');
+		}
+	}
+
+	.medal {
+		width: 15px;
+		height: 15px;
+		display: block;
+		padding: 10px;
+		top: 0;
+		left: 0;
+		background-image: url('images/investing/arrow-right.svg');
+		background-repeat: no-repeat;
+	}
+
+	.bsrm-description {
+		padding: 60px 0 125px;
+		height: auto;
+		overflow: auto;
+		border-bottom: 1px solid #404040;
+
+		h2 {
+			color: #fff;
+			font-size: 2.3em;
+			line-height: 1.2;
+			padding-right: 20px;
+			margin-bottom: 35px;
+		}
+
+		img.bsmr-image {
+			margin-top: 40px;
+		}
+
+		p {
+			font-size: 1.25em;
+			padding-right: 20px;
+			color: #EBEBEB;
+		}
+
+		p a {
+			color: #fff;
+			border-bottom: 2px solid $Green;
+		}
+
+		p a:hover {
+			text-decoration: none;
+		}
+
+		.bsmr-image {
+			padding-top: 50px;
+			width: 100%;
+		}
+
+		.bsmr-logo-strip {
+			padding: 0;
+			margin: 0;
+
+			li.partner-logos {
+				padding: 0;
+				float: left;
+				list-style-type: none;
+				margin-right: 70px;
+				margin-top: 40px;
+			}
+
+			li.partner-logos .rae-logo img {
+				width: 100px;
+			}
+
+			li.partner-logos .cc-logo img {
+				width: 170px;
+				padding-top: 35px;
+			}
+
+			li.partner-logos .bsmr-logo img {
+				width: 130px;
+				padding-top: 20px;
+			}
+		}
+	}
+
+	.bsmr-coming-soon h3 {
+		text-align: center;
+		color: #fff;
+		padding: 100px 0;
+	}
+
+	.link-btn-one {
+		float: right;
+		padding: 12px 25px;
+		margin: 0;
+		background: #2B2B2B;
+		color: #fff;
+		position: relative;
+		display: block;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-family: 'dinbold', sans-serif;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&.active {
+			background: #FDAA4E;
+			color: #212121;
+
+			&:before {
+				width: 100%;
+				height: 3px;
+				background: RGBA(0, 0, 0, 0.3);
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+			}
+
+			&:after {
+				width: 100%;
+				height: 3px;
+				background: RGBA(0, 0, 0, 0.3);
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+
+		&.center {
+			display: block;
+			margin: 0 auto;
+			float: none;
+			clear: both;
+			display: block;
+			max-width: 130px;
+			text-align: center;
+			margin-top: 50px;
+		}
+	}
+
+	.bsmr-players .link-btn-one.active {
+		background: $Red;
+	}
+
+	.mini-footer {
+		padding: 60px 0;
+		height: auto;
+		overflow: auto;
+
+		p {
+			color: #fff;
+			float: left;
+			width: intrinsic;
+			padding: 0;
+			margin: 0;
+		}
+
+		a {
+			color: #fff;
+			padding: 0;
+			margin: 0;
+			width: intrinsic;
+			float: right;
+			cursor: pointer;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	@include media-query(tablet-portrait-and-smaller) {
+
+		header {
+			padding: 0px 20px 0px 20px;
+		}
+
+		.bsrm-description {
+			padding: 0px 0px;
+
+			h2 {
+				font-size: 1.8em;
+			}
+
+			img {
+				display: none;
+			}
+
+			p {
+				font-size: 1.1em;
+			}
+
+			.g--third {
+				display: none;
+			}
+		}
+
+		.league-table { 
+			padding: 30px 25px;
+			box-sizing: border-box;
+		}
+
+		table.league-table tr {
+			padding: 17px 15px;
+		}
+
+		table.league-table tr th {
+			padding: 17px 15px;
+		}
+
+		table.league-table tr td {
+			padding: 17px 15px;
+		}
+
+		table.league-table tr td.medal {
+			background-position: 2px 11px;
+		}
+
+		table.league-table tr.row-1 td.medal {
+			background-position: 2px 13px;
+		}
+
+		table.league-table tr.row-2 td.medal {
+			background-position: 2px 13px;
+		}
+
+		table.league-table tr.row-3 td.medal {
+			background-position: 2px 13px;
+		}
+
+		.bsmr-coming-soon h3 {
+			padding: 50px 30px 65px 30px;
+		}
+
+		.bsmr-nav {
+			margin-left: 20px;
+		} 
+
+		.bsmr-hero .g--third {
+			padding-left: 20px;
+		}
+
+		.mini-footer {
+			padding: 30px 20px;
+		}
+	}
+
+	@include media-query(small) {
+
+		header {
+			padding: 15px 20px 15px 20px;
+
+			h3 {
+				display: none;
+			}
+
+			a.signup-btn {
+				padding-top: 0;
+				float: left;
+				text-align: left;
+			}
+
+			a.signup-btn:after {
+				top: 4px;
+			}
+		}
+
+		.bsmr-nav {
+			margin-left: 0px;
+			overflow: hidden;
+			box-sizing: border-box;
+			width: 100%;
+		} 
+
+		.bsmr-nav ul li {
+			margin-right: 5px;
+		}
+
+		.bsmr-nav .bsmr-menu-btn {
+			font-size: 0.9em;
+			padding: 12px 15px;
+			box-sizing: border-box;
+		}
+
+		.league-table { 
+			padding: 0px 0px;
+		}
+
+		.league-table .link-btn-one {
+			font-size: 0.9em;
+			text-align: center;
+			padding: 18px 12px;
+			width: 50%;
+			float: right;
+			box-sizing: border-box;
+		}
+
+		.league-table .link-btn-one.center {
+			float: none;
+			margin: 30px auto;
+			display: block;
+			padding: 12px;
+		}
+
+		.league-table h4 {
+			margin: 0;
+			padding: 25px;
+		}
+
+		table.league-table {
+			padding: 0;
+			margin: 0px 0;
+			margin-bottom: 30px;
+		}
+
+		table.league-table tr th {
+			display: none;
+		}
+
+		table.league-table tr td.medal {
+			margin-left: 13px !important;
+		}
+
+		table.league-table tr:nth-child(even) {
+			background: lighten(#212121, 2%);
+		}
+
+		table.league-table tr th:nth-child(4), table.league-table tr th:nth-child(3) {
+			display: none;
+		}
+
+		table.league-table tr td:nth-child(4), table.league-table tr td:nth-child(3) {
+			display: none;
+		}
+
+		.team-square-mile table.league-table tr td:nth-child(4), .team-distance table.league-table tr td:nth-child(4) {
+			display: block;
+		}
+
+		.mini-footer {
+			p {
+				width: 150px;
+				color: darken(#fff, 10%);
+			}
+
+			a {
+				margin-top:13px;
+			}
+		}
+	}
+}

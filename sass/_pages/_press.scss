@@ -1,0 +1,63 @@
+#press-main {
+  height: auto;
+  overflow: auto;
+  padding-bottom: 25px;
+
+  .green-divider {
+    border-top: 4px solid $Red;
+    margin-top: 34px;
+    padding-top: 35px;
+  }
+
+  .menu-press-menu-container {
+    padding: 0;
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      padding: 0;
+      margin: 7px 0;
+      list-style-type: none;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: 2px solid $Red;
+        cursor: pointer;
+        font-family: 'dinbold', sans-serif;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  h4 {
+    color: $Red;
+  }
+
+  blockquote {
+    margin-left: 24px;
+  }
+
+  p {
+    font-size: 1.1em;
+    a {
+      border-bottom: 2px solid $Red;
+
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

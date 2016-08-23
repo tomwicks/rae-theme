@@ -1,0 +1,24 @@
+#blog-full-article-main {
+
+  .social-btns {
+    padding-bottom: 20px;
+    text-align: left;
+
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+  }
+  @include media-query(medium) {
+    .g--third {
+      width: 240px;
+    }
+  }
+
+  @include media-query(tablet-landscape) {
+    .g--third {
+      width: 150px;
+      width: 100%;
+    }
+  }
+}
