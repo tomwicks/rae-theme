@@ -32,8 +32,9 @@
               <?php
                 }
               ?>
-              <a href="https://twitter.com/RunAnEmpire" class="link-twitter"></a>
-              <a href="https://www.facebook.com/RunAnEmpire/" class="link-facebook"></a>
+              <a class="link-social-btn">Share</a>
+              <!-- <a href="https://twitter.com/RunAnEmpire" class="link-twitter"></a>
+              <a href="https://www.facebook.com/RunAnEmpire/" class="link-facebook"></a> -->
             <!-- <div class="centered mobilehide"><a class="button-link button-green" href="#newsletter">Keep me updated</a></div> -->
             </div>
           </div>
@@ -42,7 +43,21 @@
                 <div class="image"></div>
             </div>
           </div>
+          <a class="link-scoll-down">View Trailer</a>
           <div class="clearfix"></div>
+        </div>
+      </section>
+      <section id="game-trailer">
+        <div class="container">
+          <div class="g--two--third">
+            <div class="video-holder">
+              <iframe src="https://www.youtube.com/embed/nPLjC6IDiX0" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="social-holder">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/facebook/videos/vb.20531316728/10154659446236729/?type=2%26theater" class="link-btn-one fb-blue">Share On Facebook</a>
+              <a class="link-btn-one twitter-blue">Share On Twitter</a>
+            </div>
+          </div>
         </div>
       </section>
       <section id="game-features" class="slide-small mobile">
@@ -413,10 +428,7 @@
               </a> 
               <?php
                 }
-              ?>
-
-
-        
+              ?>        
             </div>
           </div>
           <div class="g--fifth">

@@ -156,6 +156,12 @@ jQuery(document).ready(function() {
       $(this).toggleClass('active');
     });
 
+    $(document).on( "click", ".link-scoll-down", function() {
+        $(this).addClass('active');
+        $("html, body").animate({ scrollTop: $('#game-trailer').offset().top -50}, 800);
+    });
+
+    
     // Investing options
 
     $(document).on('click', '.js-invest-button', function(){
