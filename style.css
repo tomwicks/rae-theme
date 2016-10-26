@@ -4650,7 +4650,7 @@ a.cbc-menu-link {
     margin-top: 0; }
   /* line 16, sass/_pages/_my_territory.scss */
   .my-territory .container .form {
-    background: #333333;
+    background: #212121;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-left: 30px;
@@ -4668,12 +4668,13 @@ a.cbc-menu-link {
       text-align: left;
       padding: 0;
       margin: 10px 0;
-      text-transform: none; }
-    /* line 40, sass/_pages/_my_territory.scss */
+      text-transform: none;
+      font-size: 1em; }
+    /* line 41, sass/_pages/_my_territory.scss */
     .my-territory .container .form h2, .my-territory .container .form p {
       color: #fff;
       text-align: center; }
-    /* line 45, sass/_pages/_my_territory.scss */
+    /* line 46, sass/_pages/_my_territory.scss */
     .my-territory .container .form p {
       margin: 0.5em 0; }
     @media only screen and (max-width: 619px) {
@@ -4683,7 +4684,7 @@ a.cbc-menu-link {
         padding-right: 5%;
         width: 80%;
         margin: 0 5%; } }
-    /* line 56, sass/_pages/_my_territory.scss */
+    /* line 57, sass/_pages/_my_territory.scss */
     .my-territory .container .form input[type="submit"] {
       background: #298BFB;
       display: block;
@@ -4702,7 +4703,32 @@ a.cbc-menu-link {
       -moz-border-radius: 0px;
       -webkit-border-radius: 0px;
       border-radius: 0px; }
-    /* line 74, sass/_pages/_my_territory.scss */
+    /* line 75, sass/_pages/_my_territory.scss */
+    .my-territory .container .form .wpcf7-list-item span {
+      display: block;
+      float: left;
+      width: 280px;
+      font-size: 1em; }
+    /* line 82, sass/_pages/_my_territory.scss */
+    .my-territory .container .form div.wpcf7-response-output {
+      margin: 0 !important;
+      padding-top: 6px !important;
+      float: left;
+      margin-top: 0px !important;
+      width: 60%;
+      margin-top: -45px !important;
+      padding: 0; }
+    /* line 92, sass/_pages/_my_territory.scss */
+    .my-territory .container .form .wpcf7-not-valid-tip {
+      text-align: left;
+      padding-bottom: 0; }
+    /* line 97, sass/_pages/_my_territory.scss */
+    .my-territory .container .form .ajax-loader {
+      width: 15px;
+      height: 15px;
+      padding-top: 25px;
+      display: block; }
+    /* line 104, sass/_pages/_my_territory.scss */
     .my-territory .container .form input[type="submit"]:after {
       content: "";
       display: block;
@@ -4715,7 +4741,7 @@ a.cbc-menu-link {
       -moz-border-radius: 0px;
       -webkit-border-radius: 0px;
       border-radius: 0px; }
-    /* line 86, sass/_pages/_my_territory.scss */
+    /* line 116, sass/_pages/_my_territory.scss */
     .my-territory .container .form input[type="text"], .my-territory .container .form input[type="email"] {
       background: #151515;
       border: solid 2px #404040;
@@ -4727,30 +4753,30 @@ a.cbc-menu-link {
       width: calc(100% - 25px);
       box-sizing: initial;
       padding: 10px; }
-      /* line 96, sass/_pages/_my_territory.scss */
+      /* line 126, sass/_pages/_my_territory.scss */
       .my-territory .container .form input[type="text"]:focus, .my-territory .container .form input[type="email"]:focus {
         border: solid 2px #ff6969;
         color: #ff6969;
         outline: none; }
-      /* line 102, sass/_pages/_my_territory.scss */
+      /* line 132, sass/_pages/_my_territory.scss */
       .my-territory .container .form input[type="text"].filledin, .my-territory .container .form input[type="email"].filledin {
         color: #fff;
         border: solid 2px #404040 !important;
         background: #151515 !important; }
-    /* line 109, sass/_pages/_my_territory.scss */
+    /* line 139, sass/_pages/_my_territory.scss */
     .my-territory .container .form .centered {
       margin: 15px 0; }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* line 114, sass/_pages/_my_territory.scss */
+    /* line 144, sass/_pages/_my_territory.scss */
     .my-territory .container .g--third {
       width: 480px; } }
-  /* line 124, sass/_pages/_my_territory.scss */
+  /* line 154, sass/_pages/_my_territory.scss */
   .my-territory h3 {
     width: 100%;
     clear: both;
     text-align: center;
     color: #fff; }
-  /* line 131, sass/_pages/_my_territory.scss */
+  /* line 161, sass/_pages/_my_territory.scss */
   .my-territory .social {
     width: intrinsic;
     height: 50px;
@@ -4758,25 +4784,29 @@ a.cbc-menu-link {
     margin: 10px auto;
     float: none;
     padding: 0; }
-    /* line 139, sass/_pages/_my_territory.scss */
+    /* line 169, sass/_pages/_my_territory.scss */
     .my-territory .social .g--centered {
       background: blue; }
-    /* line 142, sass/_pages/_my_territory.scss */
+    /* line 172, sass/_pages/_my_territory.scss */
     .my-territory .social li {
       float: left;
       list-style-type: none; }
-  /* line 148, sass/_pages/_my_territory.scss */
+  /* line 178, sass/_pages/_my_territory.scss */
   .my-territory .heading {
     color: #25afa5; }
-  /* line 152, sass/_pages/_my_territory.scss */
+  /* line 182, sass/_pages/_my_territory.scss */
   .my-territory #mc-embedded-subscribe {
     border: none;
     color: white;
     width: 100px;
     margin-top: 15px; }
-    /* line 157, sass/_pages/_my_territory.scss */
+    /* line 187, sass/_pages/_my_territory.scss */
     .my-territory #mc-embedded-subscribe:focus {
       outline: none; }
+
+/* line 193, sass/_pages/_my_territory.scss */
+.my-territory-page .my-territory .form {
+  margin-top: 75px; }
 
 /* line 3, sass/_pages/_blog_full_article.scss */
 #blog-full-article-main .social-btns {

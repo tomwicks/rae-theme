@@ -14,7 +14,7 @@
   .container {
 
     .form {
-      background: #333333;
+      background: #212121;
       margin-top: 50px;
       margin-bottom: 50px;
       padding-left: 30px;
@@ -35,6 +35,7 @@
       	padding: 0;
       	margin: 10px 0;
       	text-transform: none;
+      	font-size: 1em;
       }
 
       h2, p {
@@ -69,6 +70,35 @@
 		color: #fff;
 		cursor: pointer;
 		@include border-radius(0px);
+	}
+
+	.wpcf7-list-item span {
+		display: block;
+		float: left;
+		width: 280px;
+		font-size: 1em;
+	}
+
+	div.wpcf7-response-output {
+		margin: 0 !important;
+		padding-top: 6px !important;
+		float: left;
+		margin-top: 0px !important;
+		width: 60%;
+		margin-top: -45px !important;
+		padding: 0;
+	}
+
+	.wpcf7-not-valid-tip {
+		text-align: left;
+		padding-bottom: 0;
+	}
+
+	.ajax-loader {
+		width: 15px;
+		height: 15px;
+		padding-top: 25px;
+		display: block;
 	}
 
 	input[type="submit"]:after {
@@ -158,4 +188,8 @@
       outline: none;
     }
   }
+}
+
+.my-territory-page .my-territory .form {
+	margin-top: 75px;
 }
