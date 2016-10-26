@@ -24,17 +24,29 @@
               
               <?php } else if ($GLOBALS['loc'] == 'gb') {  // If Great Britain ?>
                   <a href="https://appsto.re/gb/rR7aab.i" class="link-app-store download-image">
-              
-              <?php } else {
-                  // If anywhere else
-              ?>
-                    <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
-              <?php
-                }
-              ?>
-              <a class="link-social-btn">Share</a>
-              <!-- <a href="https://twitter.com/RunAnEmpire" class="link-twitter"></a>
-              <a href="https://www.facebook.com/RunAnEmpire/" class="link-facebook"></a> -->
+                  
+                <?php } else if ($GLOBALS['loc'] == 'us') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <?php } else if ($GLOBALS['loc'] == 'de') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <?php } else if ($GLOBALS['loc'] == 'br') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <?php } else if ($GLOBALS['loc'] == 'ru') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <?php } else if ($GLOBALS['loc'] == 'ca') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <?php } else if ($GLOBALS['loc'] == 'es') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <?php } else if ($GLOBALS['loc'] == 'au') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <?php } else if ($GLOBALS['loc'] == 'pt') {  // If big territory we haven't launched in ?>
+                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                
+                <?php } else { ?>
+                <a href="https://itunes.apple.com/app/run-empire-strategy-running/id1073986257?mt=8" class="link-app-store download-image"> 
+                <?php   }?>
+              <a href="https://twitter.com/RunAnEmpire" class="link-twitter"></a>
+              <a href="https://www.facebook.com/RunAnEmpire/" class="link-facebook"></a>
             <!-- <div class="centered mobilehide"><a class="button-link button-green" href="#newsletter">Keep me updated</a></div> -->
             </div>
           </div>
@@ -51,11 +63,11 @@
         <div class="container">
           <div class="g--two--third">
             <div class="video-holder">
-              <iframe src="https://www.youtube.com/embed/nPLjC6IDiX0" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/vwq9u1JjX0c" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="social-holder">
-              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/facebook/videos/vb.20531316728/10154659446236729/?type=2%26theater" class="link-btn-one fb-blue">Share On Facebook</a>
-              <a class="link-btn-one twitter-blue">Share On Twitter</a>
+              <a target="_blank" href="https://www.facebook.com/dialog/share?app_id=87741124305&href=https%3A//www.youtube.com/attribution_link%3Fa%3Dvu4yDdce6Jo%26u%3D%252Fwatch%253Fv%253Dvwq9u1JjX0c%2526feature%253Dshare&display=popup&redirect_uri=https://www.youtube.com/facebook_redirect" class="link-btn-one fb-blue">Share On Facebook</a>
+              <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A//youtu.be/vwq9u1JjX0c&text=Run%20An%20Empire%20-%20The%20Strategy%20Running%20Game&via=YouTube&related=YouTube,YouTubeTrends,YTCreators" class="link-btn-one twitter-blue">Share On Twitter</a>
             </div>
           </div>
         </div>
@@ -260,46 +272,14 @@
           <div class="centered push-up"><a class="button-link button-red" href="<?php echo Site_url(); ?>/blog">View the blog</a></div>
         </div>
       </section>
-
-      <section id="newsletter" class="slide-large">
+      <section class="slide-large my-territory">
         <div class="container">
           <div class="g--third g--centered form">
             <div id="mc_embed_signup">
-              <form action="//panstudio.us6.list-manage.com/subscribe/post?u=0d85845f04d5157c053fc34f9&amp;id=a22c631190" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
                 <div class="newsletter-box">
-                  <fieldset>
-                    <h2>Sign up</h2>
-                    <div class="indicates-required">* Required field</div>
-                    <div class="mc-field-group">
-                      <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                      </label>
-                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-                    </div>
-                    <div class="mc-field-group">
-                      <label for="mce-NAME">Name </label>
-                      <input type="text" value="" name="NAME" id="mce-NAME">
-                    </div>
-                    <div class="mc-field-group">
-                      <label for="mce-MMERGE2">Device </label>
-                      <input type="text" value="" name="MMERGE2" id="mce-MMERGE2">
-                    </div>
-                    <div class="mc-field-group">
-                      <label for="mce-MMERGE3">Town </label>
-                      <input type="text" value="" name="MMERGE3" id="mce-MMERGE3">
-                    </div>
-                    <div class="mc-field-group">
-                      <label for="mce-MMERGE4">Country </label>
-                      <input type="text" value="" name="MMERGE4" id="mce-MMERGE4">
-                    </div>
-                    <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_0d85845f04d5157c053fc34f9_a22c631190" tabindex="-1" value=""></div>
-                  </fieldset>
-                  <div class="centered">
-                    <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button-link button-green">
-                  </div>
+                  <h2>When Can I Play?</h2>
+                  <p>Fill out the form below and we'll let you know when we're live in your territory.</p>
+                  <?php echo do_shortcode('[contact-form-7 id="719" title="When Can I Play"]'); ?>
                 </div>
                 <div class="clearfix"></div>
               </form>

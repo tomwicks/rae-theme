@@ -148,6 +148,12 @@
     }
   }
 
+  @include media-query(tablet-portrait-and-smaller) {
+    .link-scoll-down {
+      display: none;
+    }
+  }
+
   @include media-query(medium) {
     min-height: 100%;
     background-size: auto 100%;
@@ -288,6 +294,21 @@
 
     .link-btn-one {
       margin: 60px 15px;
+    }
+  }
+
+  @include media-query(tablet-portrait-and-smaller) {
+    padding: 40px 0 40px 0;
+
+    .social-holder .link-btn-one {
+      margin: 40px 0px 20px 0;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .social-holder .link-btn-one:last-child {
+      margin-top: 0;
     }
   }
 }
@@ -589,91 +610,6 @@
       }
 
       margin: auto;
-    }
-  }
-
-}
-
-#newsletter {
-  background: linear-gradient(180deg, $Blue, $Pink) fixed;
-
-  @include media-query(tablet-portrait-and-smaller) {
-    background-attachment: scroll;
-  }
-
-  @include media-query(tablet-landscape) {
-    background-attachment: scroll;
-  }
-
-  h2 {text-align:center; margin-top:0;}
-
-  .container {
-
-    .form {
-      background: $White;
-      margin-top: 30px;
-      margin-bottom: 25px;
-      padding-left: 25px;
-      padding-right: 25px;
-      border-bottom: 6px solid $Grey;
-
-      @include media-query(small) {
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 80%;
-        margin: 0 5%;
-      }
-
-      .centered {
-        margin: 15px 0;
-      }
-    }
-
-    .g--third {
-      @include media-query(tablet-portrait-and-smaller) {
-        
-      }
-      @include media-query(tablet-landscape) {
-        width: 480px;
-      }
-    }
-  }
-
-  h3 {
-    width: 100%;
-    clear: both;
-    text-align: center;
-    color: #fff;
-  }
-
-  .social {
-    width: intrinsic;
-    height: 50px;
-    display: block;
-    margin: 10px auto;
-    float: none;
-    padding: 0;
-
-    .g--centered {
-      background: blue;
-    }
-    li {
-      float: left;
-      list-style-type: none;
-    }
-  }
-
-  .heading {
-    color: $Blue;
-  }
-
-  #mc-embedded-subscribe {
-    border: none;
-    color: white;
-    width: 100px;
-    margin-top: 15px;
-    &:focus {
-      outline: none;
     }
   }
 

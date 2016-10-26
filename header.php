@@ -52,7 +52,7 @@
     }
 
     //If not in available countries
-    $countries = array('nz', 'gb');
+    $countries = array('nz', 'gb', 'us', 'de', 'br', 'ru', 'ca', 'es', 'au', 'pt');
 
     if (!in_array($GLOBALS['loc'], $countries)) {
         $GLOBALS['loc'] = 'global';
