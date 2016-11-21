@@ -103,6 +103,24 @@
       background-size: 100% 100%;
     }
   }
+
+  @include media-query(tablet-landscape) {
+
+    .g--two--third {
+      width: 100%;
+    }
+  }
+
+  @include media-query(tablet-portrait-and-smaller) {
+    .banner-header {
+      padding: 0 20px;
+    }
+
+    h4 {
+      display: block;
+      width: 170px;
+    }
+  }
 }
 
 #logo {
