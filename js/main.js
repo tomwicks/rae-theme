@@ -170,25 +170,25 @@ jQuery(document).ready(function() {
 
     // Remove Announcement
 
-    if(localStorage.reinves !== '1') {
+    if(localStorage.investshow !== '1') {
         $(".announcement-banner").addClass('active');
         $(".nav").removeClass('banner-active');
         $("#introduction").removeClass('banner-active');
     } else {
        $(".nav").addClass('banner-active');
-       $("#introduction").addClass('banner-active');
+       $("#introduction").removeClass('banner-active');
     }
 
     $(document).on('click', '.exit-btn', function(){ 
-        localStorage.reinves='1'; 
-        if(localStorage.reinves !== '1') {
+        localStorage.investshow='1'; 
+        if(localStorage.investshow !== '1') {
            $('.announcement-banner').removeClass('active');
             $(".nav").addClass('banner-active');
-            $("#introduction").addClass('banner-active');
+            $("#introduction").removeClass('banner-active');
         } else {
             $('.announcement-banner').removeClass('active');
             $(".nav").addClass('banner-active');
-            $("#introduction").addClass('banner-active');
+            $("#introduction").removeClass('banner-active');
         }
 
         return false;
@@ -197,7 +197,7 @@ jQuery(document).ready(function() {
     $(document).on('click', '.exit-btn', function(){
         $('.announcement-banner').removeClass('active');
         $(".nav").addClass('banner-active');
-        $("#introduction").addClass('banner-active');
+        $("#introduction").removeClass('banner-active');
         return false;
     });
 
