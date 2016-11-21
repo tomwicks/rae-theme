@@ -47,7 +47,7 @@
         </ul>
         <h3 class="centered push-up">Got a question that hasn't been answered?</h3>
         <div class="social-btns">
-          <a href="http://community.runanempire.com" class="button-link button-green">Got a question?</a>
+          <a href="<?php echo site_url(); ?>/contact" class="button-link button-green">Got a question?</a>
         </div>
       </div>
     </div>

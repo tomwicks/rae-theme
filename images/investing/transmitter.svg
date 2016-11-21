@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="50px" viewBox="0 0 18 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Transmiter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Invest-In-RAE" transform="translate(-53.000000, -14.000000)" stroke="#FFFFFF">
+            <g id="Transmiter" transform="translate(54.000000, 15.000000)">
+                <polyline id="Line" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" points="0.443247768 48 7.77896205 29.9428571 15.0353237 48"></polyline>
+                <path d="M8.68571429,31.5428571 L8.68571429,12.8" id="Line" stroke-width="0.9" stroke-linecap="round"></path>
+                <path d="M7.77142857,12.4245536 L7.77142857,9.14285714" id="Line-Copy-2" stroke-width="0.9" stroke-linecap="round"></path>
+                <path d="M6.85714286,32 L6.85714286,12.8" id="Line-Copy" stroke-width="0.9" stroke-linecap="round"></path>
+                <path d="M7.31428571,12.8 L8.29930246,12.8" id="Line" stroke-width="0.81" stroke-linecap="square"></path>
+                <polyline id="Path-9" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" points="0.439732143 47.9959821 7.74252232 39.2754464 15.0453125 47.9959821"></polyline>
+                <path d="M7.09174107,40.0453125 L10.1890625,36.3699777" id="Line" stroke-width="1.125" stroke-linecap="square"></path>
+                <path d="M5.49520089,40.708231 L8.95301339,36.5967634" id="Line" stroke-width="1.125" stroke-linecap="square" transform="translate(7.224107, 38.652497) scale(-1, 1) translate(-7.224107, -38.652497) "></path>
+                <path d="M7.77142857,39.0857143 L7.77142857,31.7571568" id="Line" stroke-width="0.9" stroke-linecap="square"></path>
+                <path d="M7.31902902,29.3794085 L8.30906808,29.3794085" id="Line" stroke-width="0.9" stroke-linecap="square"></path>
+                <circle id="Oval-7" stroke-width="0.9" cx="8" cy="8" r="1.14285714"></circle>
+                <path d="M11.8698661,8.22857143 C11.8698661,6.08255069 10.1666493,4.34285714 8.065625,4.34285714 C5.96460067,4.34285714 4.26138393,6.08255069 4.26138393,8.22857143" id="Oval-8" stroke-width="0.9" stroke-linecap="round"></path>
+                <path d="M13.7719866,7.77142857 C13.7719866,4.55239746 11.2171615,1.94285714 8.065625,1.94285714 C4.91408851,1.94285714 2.35926339,4.55239746 2.35926339,7.77142857" id="Oval-8" stroke-width="0.9" stroke-linecap="round"></path>
+                <path d="M15.6741071,7.77142857 C15.6741071,3.47938709 12.2676737,0 8.065625,0 C3.86357634,-8.62801893e-16 0.457142857,3.47938709 0.457142857,7.77142857" id="Oval-8" stroke-width="0.9" stroke-linecap="round"></path>
+                <path d="M7.08571429,28.1142857 L8.25120446,26.9487955" id="Line" stroke-width="0.9" stroke-linecap="square"></path>
+                <path d="M7.08571429,24.8837193 L8.25120446,23.7182291" id="Line-Copy-3" stroke-width="0.9" stroke-linecap="square"></path>
+                <path d="M7.08571429,21.6531529 L8.25120446,20.4876627" id="Line-Copy-4" stroke-width="0.9" stroke-linecap="square"></path>
+                <path d="M7.08571429,18.4225865 L8.25120446,17.2570963" id="Line-Copy-5" stroke-width="0.9" stroke-linecap="square"></path>
+                <path d="M7.08571429,15.1920201 L8.25120446,14.0265299" id="Line-Copy-6" stroke-width="0.9" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -12,7 +12,7 @@
             <li><a href="https://instagram.com/RunAnEmpire">Instagram</a></li>
             <li><a href="https://plus.google.com/108125746965500673283">Google+</a></li>
             <li><a href="https://www.kickstarter.com/projects/panstudio/run-an-empire-the-real-world-territory-control-gam">Kickstarter</a></li>
-            <li><a href="https://runanempire.zendesk.com/hc/en-us">Support</a></li>
+            <li><a href="<?php echo site_url(); ?>/contact">Support</a></li>
           </ul>
         </div>
         <div id="footer-last" class="g--third g--last">

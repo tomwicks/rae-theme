@@ -101,7 +101,7 @@
             </li>
           </ul>
           <h3 class="centered push-up">Got a new feature?</h3>
-        <div class="centered mobilehide"><a class="button-link button-green" href="https://runanempire.zendesk.com/hc/en-us/categories/200801505-General" target="_blank">View our Help Centre</a></div>  
+        <div class="centered mobilehide"><a class="button-link button-green" href="<?php echo site_url(); ?>/contact">Let us know</a></div>  
 	<br>
 	<br>
         </div>

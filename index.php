@@ -26,21 +26,21 @@
                   <a href="https://appsto.re/gb/rR7aab.i" class="link-app-store download-image">
                   
                 <?php } else if ($GLOBALS['loc'] == 'us') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 <?php } else if ($GLOBALS['loc'] == 'de') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 <?php } else if ($GLOBALS['loc'] == 'br') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 <?php } else if ($GLOBALS['loc'] == 'ru') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 <?php } else if ($GLOBALS['loc'] == 'ca') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 <?php } else if ($GLOBALS['loc'] == 'es') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 <?php } else if ($GLOBALS['loc'] == 'au') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 <?php } else if ($GLOBALS['loc'] == 'pt') {  // If big territory we haven't launched in ?>
-                <a href="#newsletter" class="button-link button-red">Keep Me Updated</a>
+                <a href="#territory" class="button-link button-red">Keep Me Updated</a>
                 
                 <?php } else { ?>
                 <a href="https://itunes.apple.com/app/run-empire-strategy-running/id1073986257?mt=8" class="link-app-store download-image"> 
@@ -272,7 +272,7 @@
           <div class="centered push-up"><a class="button-link button-red" href="<?php echo Site_url(); ?>/blog">View the blog</a></div>
         </div>
       </section>
-      <section class="slide-large my-territory">
+      <section id="territory" class="slide-large my-territory">
         <div class="container">
           <div class="g--third g--centered form">
             <div id="mc_embed_signup">
