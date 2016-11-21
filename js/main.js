@@ -22,24 +22,6 @@ jQuery(document).ready(function() {
 
     }));
 
-    if(localStorage.blue !== '1') {
-        
-    } else {
-        $("#investing-popup").hide();
-    }
-
-    $(document).on('click', '.exit-btn', function(){ 
-        localStorage.blue='1'; 
-        if(localStorage.blue !== '1') {
-            $("#investing-popup").hide(); 
-            alert('been-clicked');
-        } else {
-            $("#investing-popup").hide();
-        }
-
-        return false;
-    });
-
     function mobileFixes() {
 
         // Reset the mobile style
@@ -186,34 +168,84 @@ jQuery(document).ready(function() {
         return false;
     });
 
-    /// Scroll Fix
-
-    var topofNav = $(".nav").offset().top; //gets offset of header
-    var topofVid = $("#game-trailer").offset().top;
-
-    $(window).scroll(function(){
-        if($(window).scrollTop() > (topofNav)){
-           $(".nav").addClass('banner-active');
-           $("#introduction").addClass('banner-active');
-           
-        }
-
-        else{ 
-           $(".nav").removeClass('banner-active');
-           $("#introduction").removeClass('banner-active');
-           $("#demos").hide;
-        }
-    });
-
     // Remove Announcement
 
-    $(document).on('click', '.exit', function(){
-        alert('d');
-        $(this).removeClass('active');
+    if(localStorage.black !== '1') {
+        
+    } else {
+        $(".announcement-banner").removeClass('active');
+        $(".nav").addClass('banner-active');
+        $("#introduction").addClass('banner-active');
+    }
+
+    $(document).on('click', '.exit-btn', function(){ 
+        localStorage.black='1'; 
+        if(localStorage.black !== '1') {
+           $('.announcement-banner').removeClass('active');
+            $(".nav").addClass('banner-active');
+            $("#introduction").addClass('banner-active');
+        } else {
+            $('.announcement-banner').removeClass('active');
+            $(".nav").addClass('banner-active');
+            $("#introduction").addClass('banner-active');
+        }
+
         return false;
     });
 
+    $(document).on('click', '.exit-btn', function(){
+        $('.announcement-banner').removeClass('active');
+        $(".nav").addClass('banner-active');
+        $("#introduction").addClass('banner-active');
+        return false;
+    });
+
+    $(document).on('click', '.exit-btn', function(){
+
+    if ( $('.announcement-banner').hasClass( "active" ) ) {
+        
+    } else {
+        var topofNav = $(".nav").offset().top;
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() > (topofNav)){
+               $(".nav").addClass('banner-active');
+               $("#introduction").addClass('banner-active');
+            }
+
+            else { 
+               $(".nav").removeClass('banner-active');
+               $("#introduction").removeClass('banner-active');
+               $("#demos").hide;
+            }
+        });
+    }
+
+    });
+
     /// 
+
+    /// Scroll Fix
+
+    if ( $('.announcement-banner').hasClass( "active" ) ) {
+ 
+        var topofNav = $(".nav").offset().top; //gets offset of header
+
+        $(window).scroll(function(){
+            if($(window).scrollTop() > (topofNav)){
+               $(".nav").addClass('banner-active');
+               $("#introduction").addClass('banner-active');
+            }
+
+            else { 
+               $(".nav").removeClass('banner-active');
+               $("#introduction").removeClass('banner-active');
+               $("#demos").hide;
+            }
+        });
+    } else {
+
+    }
 
     $(document).on('click', '.bsmr-league-switch', function(){
 

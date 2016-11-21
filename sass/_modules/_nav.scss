@@ -9,6 +9,11 @@
   z-index: 100;
   border-bottom: 3px solid rgba(0,0,0,0.2);
   box-sizing: border-box;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 
   .banner-header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
