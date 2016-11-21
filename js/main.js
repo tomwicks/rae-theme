@@ -170,17 +170,18 @@ jQuery(document).ready(function() {
 
     // Remove Announcement
 
-    if(localStorage.black !== '1') {
-        
+    if(localStorage.reinves !== '1') {
+        $(".announcement-banner").addClass('active');
+        $(".nav").removeClass('banner-active');
+        $("#introduction").removeClass('banner-active');
     } else {
-        $(".announcement-banner").removeClass('active');
-        $(".nav").addClass('banner-active');
-        $("#introduction").addClass('banner-active');
+       $(".nav").addClass('banner-active');
+       $("#introduction").addClass('banner-active');
     }
 
     $(document).on('click', '.exit-btn', function(){ 
-        localStorage.black='1'; 
-        if(localStorage.black !== '1') {
+        localStorage.reinves='1'; 
+        if(localStorage.reinves !== '1') {
            $('.announcement-banner').removeClass('active');
             $(".nav").addClass('banner-active');
             $("#introduction").addClass('banner-active');

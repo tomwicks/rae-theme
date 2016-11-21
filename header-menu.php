@@ -1,4 +1,4 @@
-<div class="announcement-banner active">
+<div class="announcement-banner">
     <div class="banner-header">
       <div class="container">
         <h4>Run An Empire <span>Announcement:</span></h4>
