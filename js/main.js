@@ -170,7 +170,7 @@ jQuery(document).ready(function() {
 
     // Remove Announcement
 
-    if(localStorage.investshow !== '1') {
+    if(localStorage.investbanner !== '1') {
         $(".announcement-banner").addClass('active');
         $(".nav").removeClass('banner-active');
         $("#introduction").removeClass('banner-active');
@@ -180,8 +180,8 @@ jQuery(document).ready(function() {
     }
 
     $(document).on('click', '.exit-btn', function(){ 
-        localStorage.investshow='1'; 
-        if(localStorage.investshow !== '1') {
+        localStorage.investbanner='1'; 
+        if(localStorage.investbanner !== '1') {
            $('.announcement-banner').removeClass('active');
             $(".nav").addClass('banner-active');
             $("#introduction").removeClass('banner-active');
