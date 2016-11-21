@@ -8,7 +8,7 @@
     <div class="banner-body">
       <div class="container">
         <div class="g--two--third"> 
-          <img class="invest-image" src="<?php echo get_bloginfo('template_directory');?>/images/bsmr/gauntlet.png">
+          <img class="banner-image" src="<?php echo get_bloginfo('template_directory');?>/images/bsmr/gauntlet.png">
           <div class="banner-info">
             <h1>Invest in Run An Empire Today!</h1>
             <p>Become a shareholder in Run An Empire! Invest from as little as £10 on Crowdcube now.</p>

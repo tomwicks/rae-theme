@@ -1225,31 +1225,61 @@ a#cookie-policy {
       font-family: 'dinregular', sans-serif; }
   /* line 22, sass/_modules/_nav.scss */
   .announcement-banner h4:before {
+    float: left;
+    margin-right: 25px;
     display: block;
     content: "";
     width: 15px;
-    height: 30px;
+    margin-top: -12px;
+    height: 40px;
     background: url("images/investing/transmitter.svg") no-repeat top center;
     background-size: 100% 100%;
     cursor: pointer; }
+  /* line 35, sass/_modules/_nav.scss */
+  .announcement-banner .g--two--third {
+    float: none;
+    background: red;
+    margin: 40px auto;
+    height: auto;
+    overflow: auto; }
+  /* line 43, sass/_modules/_nav.scss */
+  .announcement-banner .banner-image {
+    width: calc(40% - 30px);
+    float: left;
+    margin-right: 60px; }
+  /* line 49, sass/_modules/_nav.scss */
+  .announcement-banner .banner-info {
+    width: calc(60% - 30px);
+    float: right; }
+  /* line 54, sass/_modules/_nav.scss */
+  .announcement-banner h1 {
+    color: #202020;
+    line-height: 1.3;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  /* line 61, sass/_modules/_nav.scss */
+  .announcement-banner p {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #202020; }
 
-/* line 33, sass/_modules/_nav.scss */
+/* line 68, sass/_modules/_nav.scss */
 #logo {
   color: white;
   letter-spacing: 1px;
   float: left;
   padding-top: 15px;
   font-family: 'dinbold', sans-serif; }
-  /* line 40, sass/_modules/_nav.scss */
+  /* line 75, sass/_modules/_nav.scss */
   #logo:hover {
     text-decoration: none;
     color: #49e8a4; }
   @media only screen and (max-width: 768px) {
-    /* line 33, sass/_modules/_nav.scss */
+    /* line 68, sass/_modules/_nav.scss */
     #logo {
       margin-left: 5%; } }
 
-/* line 50, sass/_modules/_nav.scss */
+/* line 85, sass/_modules/_nav.scss */
 .nav {
   background-color: #333;
   height: 55px;
@@ -1257,103 +1287,103 @@ a#cookie-policy {
   z-index: 2;
   width: 100%;
   top: 0; }
-  /* line 58, sass/_modules/_nav.scss */
+  /* line 93, sass/_modules/_nav.scss */
   .nav .container {
     padding-top: 0px; }
     @media only screen and (max-width: 768px) {
-      /* line 58, sass/_modules/_nav.scss */
+      /* line 93, sass/_modules/_nav.scss */
       .nav .container {
         padding-bottom: 0; } }
-  /* line 66, sass/_modules/_nav.scss */
+  /* line 101, sass/_modules/_nav.scss */
   .nav .nav-logo-link {
     display: block; }
-  /* line 70, sass/_modules/_nav.scss */
+  /* line 105, sass/_modules/_nav.scss */
   .nav .nav-logo {
     float: left;
     width: auto;
     height: 70px;
     padding: 5px 0; }
     @media only screen and (max-width: 768px) {
-      /* line 70, sass/_modules/_nav.scss */
+      /* line 105, sass/_modules/_nav.scss */
       .nav .nav-logo {
         padding: 5px 0px 5px 15px; } }
-  /* line 80, sass/_modules/_nav.scss */
+  /* line 115, sass/_modules/_nav.scss */
   .nav .menu {
     padding: 15px 0 0 0;
     margin: 0;
     float: right; }
     @media only screen and (max-width: 768px) {
-      /* line 80, sass/_modules/_nav.scss */
+      /* line 115, sass/_modules/_nav.scss */
       .nav .menu {
         padding: 0;
         float: none;
         height: 0;
         overflow: hidden; } }
-    /* line 92, sass/_modules/_nav.scss */
+    /* line 127, sass/_modules/_nav.scss */
     .nav .menu a {
       color: white;
       text-transform: uppercase; }
-      /* line 96, sass/_modules/_nav.scss */
+      /* line 131, sass/_modules/_nav.scss */
       .nav .menu a:hover {
         color: #49e8a4;
         text-decoration: none; }
-    /* line 102, sass/_modules/_nav.scss */
+    /* line 137, sass/_modules/_nav.scss */
     .nav .menu li {
       display: inline-block;
       list-style-type: none;
       margin: 0 20px; }
       @media only screen and (min-width: 769px) and (max-width: 1024px) {
-        /* line 102, sass/_modules/_nav.scss */
+        /* line 137, sass/_modules/_nav.scss */
         .nav .menu li {
           margin: 0 13px; } }
-    /* line 113, sass/_modules/_nav.scss */
+    /* line 148, sass/_modules/_nav.scss */
     .nav .menu .current_page_item a {
       color: #49e8a4; }
-  /* line 118, sass/_modules/_nav.scss */
+  /* line 153, sass/_modules/_nav.scss */
   .nav span.menu-btn {
     cursor: pointer;
     display: none;
     color: white; }
   @media only screen and (max-width: 768px) {
-    /* line 125, sass/_modules/_nav.scss */
+    /* line 160, sass/_modules/_nav.scss */
     .nav span.menu-btn {
       display: block;
       float: right;
       margin: 20px 5% 30px 0; }
-      /* line 130, sass/_modules/_nav.scss */
+      /* line 165, sass/_modules/_nav.scss */
       .nav span.menu-btn img {
         width: auto;
         height: 30px; }
-    /* line 136, sass/_modules/_nav.scss */
+    /* line 171, sass/_modules/_nav.scss */
     .nav .menu {
       clear: both;
       width: 100%;
       position: relative;
       text-align: center; }
-      /* line 141, sass/_modules/_nav.scss */
+      /* line 176, sass/_modules/_nav.scss */
       .nav .menu li {
         background-color: white;
         display: block;
         padding: 15px;
         margin: 0; }
-        /* line 147, sass/_modules/_nav.scss */
+        /* line 182, sass/_modules/_nav.scss */
         .nav .menu li a {
           color: #4d4d4d; } }
 
-/* line 155, sass/_modules/_nav.scss */
+/* line 190, sass/_modules/_nav.scss */
 .opened-nav {
   padding-top: 0px; }
 
-/* line 159, sass/_modules/_nav.scss */
+/* line 194, sass/_modules/_nav.scss */
 .menu.opened-menu {
   height: auto; }
 
-/* line 163, sass/_modules/_nav.scss */
+/* line 198, sass/_modules/_nav.scss */
 .main {
   position: relative;
   z-index: 1; }
 
-/* line 170, sass/_modules/_nav.scss */
+/* line 205, sass/_modules/_nav.scss */
 .local-selector {
   margin: 10px 0 0 0;
   float: right;
@@ -1376,7 +1406,7 @@ a#cookie-policy {
   user-select: none;
   /* non-prefixed version, currently
      not supported by any browser */ }
-  /* line 186, sass/_modules/_nav.scss */
+  /* line 221, sass/_modules/_nav.scss */
   .local-selector .local-selected {
     color: #fff;
     width: intrinsic;
@@ -1384,14 +1414,14 @@ a#cookie-policy {
     height: 45px;
     cursor: pointer;
     width: 100%; }
-    /* line 194, sass/_modules/_nav.scss */
+    /* line 229, sass/_modules/_nav.scss */
     .local-selector .local-selected img {
       display: block;
       width: 25px;
       float: left;
       height: 25px;
       margin: 4px 15px 0 0; }
-    /* line 202, sass/_modules/_nav.scss */
+    /* line 237, sass/_modules/_nav.scss */
     .local-selector .local-selected span {
       display: block;
       float: left;
@@ -1409,7 +1439,7 @@ a#cookie-policy {
       user-select: none;
       /* non-prefixed version, currently
            not supported by any browser */ }
-    /* line 215, sass/_modules/_nav.scss */
+    /* line 250, sass/_modules/_nav.scss */
     .local-selector .local-selected .triangle {
       display: inline-block;
       width: 0;
@@ -1422,13 +1452,13 @@ a#cookie-policy {
       width: 0px;
       height: 0px;
       float: right; }
-    /* line 229, sass/_modules/_nav.scss */
+    /* line 264, sass/_modules/_nav.scss */
     .local-selector .local-selected.active .triangle {
       -moz-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       -webkit-transform: rotate(180deg);
       transform: rotate(180deg); }
-  /* line 234, sass/_modules/_nav.scss */
+  /* line 269, sass/_modules/_nav.scss */
   .local-selector .dropdown {
     width: intrinsic;
     background: #1a1a1a;
@@ -1437,38 +1467,38 @@ a#cookie-policy {
     display: none;
     position: absolute;
     width: 100%; }
-    /* line 243, sass/_modules/_nav.scss */
+    /* line 278, sass/_modules/_nav.scss */
     .local-selector .dropdown li {
       height: auto;
       overflow: auto;
       margin: 0;
       width: 100%;
       border-bottom: 1px solid #4d4d4d; }
-      /* line 250, sass/_modules/_nav.scss */
+      /* line 285, sass/_modules/_nav.scss */
       .local-selector .dropdown li:last-child {
         border-bottom: none; }
-      /* line 254, sass/_modules/_nav.scss */
+      /* line 289, sass/_modules/_nav.scss */
       .local-selector .dropdown li a {
         color: white;
         display: block;
         padding: 10px 15px;
         text-decoration: none; }
-      /* line 261, sass/_modules/_nav.scss */
+      /* line 296, sass/_modules/_nav.scss */
       .local-selector .dropdown li:hover {
         background: #49e8a4;
         text-decoration: none; }
-      /* line 266, sass/_modules/_nav.scss */
+      /* line 301, sass/_modules/_nav.scss */
       .local-selector .dropdown li:hover span {
         color: #4d4d4d; }
-    /* line 271, sass/_modules/_nav.scss */
+    /* line 306, sass/_modules/_nav.scss */
     .local-selector .dropdown.active {
       display: block; }
   @media only screen and (max-width: 768px) {
-    /* line 170, sass/_modules/_nav.scss */
+    /* line 205, sass/_modules/_nav.scss */
     .local-selector {
       display: none; } }
 
-/* line 282, sass/_modules/_nav.scss */
+/* line 317, sass/_modules/_nav.scss */
 a.cbc_content {
   float: right;
   color: white;
@@ -1476,7 +1506,7 @@ a.cbc_content {
   padding-left: 20px;
   margin-top: 15px;
   text-decoration: none; }
-  /* line 290, sass/_modules/_nav.scss */
+  /* line 325, sass/_modules/_nav.scss */
   a.cbc_content:before {
     margin-top: 1px;
     width: 30px;
@@ -1490,48 +1520,48 @@ a.cbc_content {
     background-size: 100%;
     background-position: center center; }
 
-/* line 305, sass/_modules/_nav.scss */
+/* line 340, sass/_modules/_nav.scss */
 a.cbc-menu-link {
   float: right;
   text-transform: uppercase;
   color: white;
   margin: 15px 19px; }
-  /* line 311, sass/_modules/_nav.scss */
+  /* line 346, sass/_modules/_nav.scss */
   a.cbc-menu-link:hover {
     color: #49e8a4;
     text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
-  /* line 318, sass/_modules/_nav.scss */
+  /* line 353, sass/_modules/_nav.scss */
   .main {
     position: relative;
     z-index: 1; }
 
-  /* line 323, sass/_modules/_nav.scss */
+  /* line 358, sass/_modules/_nav.scss */
   .opened-nav {
     padding-top: 260px; } }
 @media only screen and (max-width: 768px) {
-  /* line 333, sass/_modules/_nav.scss */
+  /* line 368, sass/_modules/_nav.scss */
   .nav {
     height: 55px; }
-    /* line 335, sass/_modules/_nav.scss */
+    /* line 370, sass/_modules/_nav.scss */
     .nav #logo {
       padding-top: 15px; }
-    /* line 338, sass/_modules/_nav.scss */
+    /* line 373, sass/_modules/_nav.scss */
     .nav .menu {
       padding-top: 15px; } }
     @media only screen and (max-width: 768px) and (max-width: 768px) {
-      /* line 338, sass/_modules/_nav.scss */
+      /* line 373, sass/_modules/_nav.scss */
       .nav .menu {
         padding: 0; } }
 @media only screen and (max-width: 768px) {
-    /* line 345, sass/_modules/_nav.scss */
+    /* line 380, sass/_modules/_nav.scss */
     .nav a.cbc-menu-link {
       display: none; }
-    /* line 349, sass/_modules/_nav.scss */
+    /* line 384, sass/_modules/_nav.scss */
     .nav span.menu-btn {
       margin: 20px 5% 20px 0; }
-      /* line 352, sass/_modules/_nav.scss */
+      /* line 387, sass/_modules/_nav.scss */
       .nav span.menu-btn img {
         height: 15px; } }
 /* line 1, sass/_modules/_footer.scss */
