@@ -48,7 +48,7 @@
 
 #introduction {
   // background: black url('images/bg-intro.jpg') no-repeat center center fixed;
-  background: #212121 url('images/home/bg.jpg') no-repeat center center fixed;
+  background: #212121 url('images/home/bg.jpg') no-repeat center center;
   background-size: 100% auto;
   z-index: 10;
   background-position: 0 0;
@@ -58,6 +58,10 @@
   width: 100%;
   overflow: hidden;
   text-align: center;
+
+  &.banner-active {
+    margin-top: 55px;
+  }
 
   @include media-query(small) {
     background: white url('images/bg-mobile.jpg') no-repeat center center fixed;

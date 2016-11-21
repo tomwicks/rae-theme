@@ -186,6 +186,35 @@ jQuery(document).ready(function() {
         return false;
     });
 
+    /// Scroll Fix
+
+    var topofNav = $(".nav").offset().top; //gets offset of header
+    var topofVid = $("#game-trailer").offset().top;
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > (topofNav)){
+           $(".nav").addClass('banner-active');
+           $("#introduction").addClass('banner-active');
+           
+        }
+
+        else{ 
+           $(".nav").removeClass('banner-active');
+           $("#introduction").removeClass('banner-active');
+           $("#demos").hide;
+        }
+    });
+
+    // Remove Announcement
+
+    $(document).on('click', '.exit', function(){
+        alert('d');
+        $(this).removeClass('active');
+        return false;
+    });
+
+    /// 
+
     $(document).on('click', '.bsmr-league-switch', function(){
 
         var league = $(this).attr('data-league');
