@@ -1,7 +1,8 @@
 <?php get_header(); ?>
-
+    
   <body>
     <?php get_template_part('header-menu'); ?>
+    
     <main id="front-page" class="main">
       <section id="introduction">
 <!--         <div class="ribbon-box">
