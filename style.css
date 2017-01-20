@@ -4303,6 +4303,13 @@ a.cbc-menu-link {
     #bsmr-signup-main .bsmr-signup-draw p {
       font-size: 1em; } }
 
+/* line 2, sass/_pages/_vote.scss */
+.territory-voting input[type="text"] {
+  color: black;
+  background: #fff;
+  padding: 5px 5px 5px 5px;
+  height: auto; }
+
 /* line 1, sass/_pages/_bsmr_league.scss */
 .bsmr-league footer {
   display: none; }

@@ -21,7 +21,6 @@
 				$total = $row->total . ' ';
 				$percentage = ($total / $totalentries ) * 100 . '%';
 				$percentagerounded = round($percentage, 1) . '% ';
-
 				
 			   	echo $region;
 			   	echo $total;
@@ -42,19 +41,23 @@
         	<input name="firstname" id="firstName" type="text">
         	<label>Last Name</label>
         	<input name="lastname" id="lastName" type="text">
-        	<label>email</label>
+        	<label>Email</label>
         	<input name="email" id="email" type="text">
-        	<label>region</label>
+        	<label>Continent</label>
         	<select name="region" id="region">
 			  <option selected value="europe">Europe</option>
 			  <option value="usa">United States</option>
 			  <option value="rest_of_world">Rest of World</option>
 			</select>
+			<select name="device" id="device">
+			  <option selected value="Android">Android</option>
+			  <option value="iOS">iOS</option>
+			</select>
 			<label>Country</label>
         	<select name="country" id="country">
-			  <option selected value="germany">Germany</option>
-			  <option value="france">France</option>
-			  <option value="spain">Spain</option>
+			  <option selected value="Germany">Germany</option>
+			  <option value="France">France</option>
+			  <option value="Spain">Spain</option>
 			</select>
 			<input type="submit" 
       name="submit" value="Sent">
