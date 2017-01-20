@@ -5,7 +5,7 @@
       	<?php 	
       		global $wpdb;
 
-			$sqlregion = 'SELECT region, COUNT(*) as total FROM wp_territory_voting GROUP BY region';
+			$sqlregion = 'SELECT region, COUNT(*) as total FROM wp_territory_voting GROUP BY region ORDER BY COUNT(*) DESC';
 			$sqltotal = "SELECT region, COUNT(*) as mySum FROM wp_territory_voting";
 
 			$result = $wpdb->get_results($sqlregion) or die(mysql_error());
@@ -27,9 +27,18 @@
 			   	echo $percentagerounded;
 
 			}
+
+			function count_down() {
+				$date = strtotime("May 1st, 2017 2:00 PM");
+				$remaining = $date - time();
+
+				$days_remaining = floor($remaining / 86400);
+				$hours_remaining = floor(($remaining % 86400) / 3600);
+				echo "There are $days_remaining days and $hours_remaining hours left";
+			}
       	?>
       	</div>
-      	<h1>Europe: <?php echo $total ?></h1>
+      	<h1>Europe: <?php echo count_down(); ?></h1>
         <form id="rae-vote" action="<?php echo get_site_url(); ?>/wp-content/plugins/rae-voting/vote-form-submit.php" method="post">
         	<label>First Name</label>
         	<?php
@@ -45,17 +54,21 @@
         	<input name="email" id="email" type="text">
         	<label>Continent</label>
         	<select name="region" id="region">
-			  <option selected value="europe">Europe</option>
+        	<option disabled selected value>Select an region...</option>
+			  <option value="europe">Europe</option>
 			  <option value="usa">United States</option>
 			  <option value="rest_of_world">Rest of World</option>
 			</select>
 			<select name="device" id="device">
-			  <option selected value="Android">Android</option>
+				<option disabled selected value>Select a device...</option>
+			  <option value="Android">Android</option>
 			  <option value="iOS">iOS</option>
 			</select>
 			<label>Country</label>
         	<select name="country" id="country">
-			  <option selected value="Germany">Germany</option>
+        	  <option>Germany</option>
+        	  <option disabled selected value>Select an option...</option>
+			  <option value="Germany">Germany</option>
 			  <option value="France">France</option>
 			  <option value="Spain">Spain</option>
 			</select>
