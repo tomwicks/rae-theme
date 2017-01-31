@@ -1,6 +1,90 @@
 <?php/*** Template Name: Voting */?>
-<?php get_header(); ?>
+<?php include('slim-header.php'); ?>
       <article class="territory-voting">
+      	<header>
+      		<div class="container">
+  			<h1>Run An Empire</h1>    		
+  			<nav>
+  				<ul>
+  					<li><a class="about-rae" href="">About Run An Empire</a></li>
+  					<li><a class="about-vote" href="">About the vote</a></li>
+  					<li class="twitter"><a target="_blank" href="https://twitter.com/runanempire"></a></li>
+  					<li class="facebook"><a target="_blank" href="https://www.facebook.com/RunAnEmpire/"></a></li>
+  				</ul>
+  			</nav>
+  			</div>
+      	</header>
+      	<section class="description">
+      		<div class="container">
+  				<div class="col-4">
+	      			<h2>Where should Run An </br> Empire Launch Next</h2>
+	      			<p>Vote for your region as the next territory where <a class="about-rae">Run An Empire</a> is available to play.</p>
+  				</div>
+      		</div>
+      	</section>
+      	<section class="article-map">
+      		<div class="world-container">
+      			<div class="world-inner-container">
+	      			<div class="country vote-btn north-america" id="north-america" name="North America">
+	      				<img src="<?php echo get_bloginfo('template_url') ?>/images/vote/north-america.svg">
+	      			</div>
+	      			<div class="country vote-btn south-america" id="south-america" name="South America">
+	      				<img src="<?php echo get_bloginfo('template_url') ?>/images/vote/south-america.svg">
+	      			</div>
+	      			<div class="country vote-btn europe" id="europe" name="Europe">
+	      				<img src="<?php echo get_bloginfo('template_url') ?>/images/vote/europe.svg">
+	      			</div>
+	      			<div class="country vote-btn asia-oceania" id="asia-oceania" name="Asia &amp; Oceania">
+	      				<img src="<?php echo get_bloginfo('template_url') ?>/images/vote/asia-oceania.svg">
+	      			</div>
+	      			<div class="country vote-btn africa" name="Africa" id="africa">
+	      				<img src="<?php echo get_bloginfo('template_url') ?>/images/vote/africa.svg">
+	      			</div>
+	      		</div>
+      		</div>
+      	</section>
+      	<section class="form">
+      		<div class="form-container">
+      				<div class="form-header">
+      					<h3></h3>
+      				</div>
+			        <form id="rae-vote" action="<?php echo get_site_url(); ?>/wp-content/plugins/rae-voting/vote-form-submit.php" method="post">
+			        	<?php
+						if(isset($_GET['refer'])){ //Checks for refer code
+							?><input type="hidden" value="<?php echo $_GET['refer'];?>" id="refer" name="refer">
+						<?php
+							}
+						?>
+						<label>First Name</label>
+			        	<input name="firstname" id="firstName" type="text">
+			        	<label>Last Name</label>
+			        	<input name="lastname" id="lastName" type="text">
+			        	<label>Email</label>
+			        	<input name="email" id="email" type="text">
+			        	<label>Continent</label>
+			        	<select name="region" id="region">
+			        	<option disabled selected value>Select an region...</option>
+						  <option value="north-america">North America</option>
+						  <option value="south-america">South America</option>
+						  <option value="europe">Europe</option>
+						  <option value="asia-oceania">Asia &amp; Oceania</option>
+						  <option value="africa">Africa</option>
+						</select>
+						<select name="device" id="device">
+							<option disabled selected value>Select a device...</option>
+						  <option value="Android">Android</option>
+						  <option value="iOS">iOS</option>
+						</select>
+						<label>Country</label>
+			        	<select name="country" id="country">
+			        	  <option disabled selected value>Select an option...</option>
+						  
+						</select>
+						<input type="submit" 
+			      name="submit" value="Sent">
+			        </form>
+      			</div>
+      	</section>
       	<div id="update-div">
       	<?php 	
       		global $wpdb;
@@ -27,55 +111,9 @@
 			   	echo $percentagerounded;
 
 			}
-
-			function count_down() {
-				$date = strtotime("May 1st, 2017 2:00 PM");
-				$remaining = $date - time();
-
-				$days_remaining = floor($remaining / 86400);
-				$hours_remaining = floor(($remaining % 86400) / 3600);
-				echo "There are $days_remaining days and $hours_remaining hours left";
-			}
       	?>
       	</div>
-      	<h1>Europe: <?php echo count_down(); ?></h1>
-        <form id="rae-vote" action="<?php echo get_site_url(); ?>/wp-content/plugins/rae-voting/vote-form-submit.php" method="post">
-        	<label>First Name</label>
-        	<?php
-			if(isset($_GET['refer'])){ //Checks for refer code
-				?><input type="hidden" value="<?php echo $_GET['refer'];?>" id="refer" name="refer">
-			<?php
-				}
-			?>
-        	<input name="firstname" id="firstName" type="text">
-        	<label>Last Name</label>
-        	<input name="lastname" id="lastName" type="text">
-        	<label>Email</label>
-        	<input name="email" id="email" type="text">
-        	<label>Continent</label>
-        	<select name="region" id="region">
-        	<option disabled selected value>Select an region...</option>
-			  <option value="europe">Europe</option>
-			  <option value="usa">United States</option>
-			  <option value="rest_of_world">Rest of World</option>
-			</select>
-			<select name="device" id="device">
-				<option disabled selected value>Select a device...</option>
-			  <option value="Android">Android</option>
-			  <option value="iOS">iOS</option>
-			</select>
-			<label>Country</label>
-        	<select name="country" id="country">
-        	  <option>Germany</option>
-        	  <option disabled selected value>Select an option...</option>
-			  <option value="Germany">Germany</option>
-			  <option value="France">France</option>
-			  <option value="Spain">Spain</option>
-			</select>
-			<input type="submit" 
-      name="submit" value="Sent">
-        </form>
       </article>
     </main>
-<?php get_footer(); ?>
+<?php include('slim-footer.php'); ?>
     

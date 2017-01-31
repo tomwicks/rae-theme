@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="65px" viewBox="0 0 47 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.87223936,6.88614502 C-2.28060547,16.0576571 -2.2903296,30.9716156 6.84063591,40.1561197 L23.4883601,56.8386088 L40.1368945,40.1561197 C49.2678601,30.9716156 49.2581359,16.0576571 40.1052911,6.88695702 C30.9411014,-2.29592301 16.0331876,-2.29511101 6.87223936,6.88614502 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="46.9775304" height="56.8386088" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="v0.3---Form" transform="translate(-1005.000000, -286.000000)">
+            <g id="17%" transform="translate(1005.000000, 286.000000)">
+                <g id="Group-2">
+                    <path d="M40.6438578,58.2005257 C40.6438578,61.7895547 33.0241853,64.6965059 23.625806,64.6965059 C14.2282371,64.6965059 6.609375,61.7895547 6.609375,58.2005257 C6.609375,54.6131206 14.2282371,51.7045455 23.625806,51.7045455 C33.0241853,51.7045455 40.6438578,54.6131206 40.6438578,58.2005257" id="Fill-1-Copy" fill="#000000" opacity="0.203634511"></path>
+                    <use id="Fill-3" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="3.686" fill="#2F2F2F" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

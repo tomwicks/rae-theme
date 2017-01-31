@@ -1,8 +1,275 @@
 .territory-voting {
-	input[type="text"] {
-		color: black;
-		background: #fff;
-		padding: 5px 5px 5px 5px;
-		height: auto;
+	background: #2F2F2F;
+
+	.col-4 {
+		width: 33%;
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	header {
+		background: #242424;
+		height: 63px;
+		text-transform: uppercase;
+
+		h1 {
+			font-size: 1em;
+			color: #fff;
+			padding: 20px 0;
+			float: left;
+		}
+
+		nav {
+			float: right;
+			padding: 0;
+
+			ul {
+				padding: 0;
+			}
+
+			li {
+				list-style-type: none;
+				float: left;
+				padding: 2px 0;
+				margin-left: 30px;
+			}
+
+			a {
+				color: #fff;
+				font-family: 'dinbold', sans-serif;
+				text-decoration: none;
+				border-bottom: 1px solid #FFED70;
+			}
+
+			.twitter a, .facebook a {
+				width: 35px;
+				height:35px;
+				margin-top: -2px;
+				display: block;
+				border-bottom: 0;
+				background: url('images/vote/twitter.svg') no-repeat top center;
+  				background-size: 100% 100%;
+			}
+
+			.facebook a {
+				background: url('images/vote/facebook.svg') no-repeat top center;
+				background-size: 100% 100%;
+			}
+
+			.facebook, .twitter {
+				padding: 0;
+			}
+
+			.facebook {
+				margin-left: 15px;
+			}
+		}
+	}
+
+	.description {
+		.g--third {
+			margin: 0 auto;
+			display: block;
+			float: none;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			line-height: 1.1;
+			color: #fff;
+			text-align: center;
+			margin: 18px 0;
+		}
+
+		p {
+			color: #fff;
+			margin-top: 10px;
+			line-height: 1.4;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		p a {
+			opacity: 1;
+			color: #fff;
+			text-align: center;
+			border-bottom:1px solid #FFED70;
+		}
+	}
+
+	.article-map {
+		width: 100%;
+		height: 100vh;
+
+		.world-container {
+			width: 1150px;
+			height: 550px;
+			position: absolute;
+			top: 64%;
+			left: 51%;
+			transform: translate(-50%, -50%);
+		}
+
+		.world-inner-container-inner {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+
+		.country {
+			cursor: pointer;
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			opacity: 0.8;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		.country.north-america {
+			width: 462px;
+		}
+
+		.country.south-america {
+			width: 188px;
+			top: 236px;
+			left: 165px;
+		}
+
+		.country.africa {
+			top: 169px;
+			width: 278px;
+			left: 401px;
+		}
+
+		.country.asia-oceania {
+			left: 561px;
+			top: 14px;
+			width: 538px;
+		}
+
+		.country.europe {
+			left: 428px;
+			top: 17px;
+			width: 264px;
+		}
+
+		.terms-conditions {
+			bottom: 0;
+		}
+	}
+
+	.form {
+		display: none;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 5;
+
+		.form-container {
+			width: 33%;
+			z-index: 10;
+			height: auto;
+			position: absolute;
+			background: #212121;
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+			top: 50%;
+			left: 50%;
+			padding: 0;
+			transform: translate(-50%, -50%);
+
+			.form-header {
+				width: 100%;
+				height: 120px;
+				margin-top: 0;
+  				position: relative;
+
+				h3 {
+					font-size: 1.3em;
+					line-height: 1.1;
+					font-family: 'dinbold', sans-serif;
+					color: #fff;
+					position: absolute;
+					bottom: 25px;
+					left: 25px;
+					margin: 0;
+				}
+			}
+
+			input[type="text"] {
+			background: #212121;
+			color: #fff;
+			padding: 5px 5px 5px 5px;
+				height: auto;
+
+			}
+
+			&.north-america {
+
+				.form-header {
+					background: url('images/vote/north-america-black.svg') no-repeat;
+					background-color: #4BA0F5;
+					background-size: 400% 400%;
+					background-position: 30% -300px;
+				}
+
+				input:focus {
+					border: 2px solid #4BA0F5;
+					color: #4BA0F5;
+				}
+
+			}
+
+			&.south-america .form-header {
+				background: url('images/vote/south-america-black.svg') no-repeat top right;
+				background-color: #A2E576;
+				background-size: 370% 370%;
+				background-position: 40% 40%;
+			}
+
+			&.europe .form-header {
+				background: url('images/vote/europe-black.svg') no-repeat top right;
+				background-color: #30E2AB;
+				background-size: 200% 200%;
+				background-position: 30% 50%;
+			}
+
+			&.africa .form-header {
+				background: url('images/vote/africa-black.svg') no-repeat top right;
+				background-color: #52DDFF;
+				background-size: 370% 370%;
+				background-position: 40% 40%;
+			}
+			&.asia-oceania .form-header {
+				background: url('images/vote/asia-oceania-black.svg') no-repeat top right;
+				background-color: #FD6A6C;
+				background-size: 390% 390%;
+				background-position: 30% 45%;
+			}
+
+			form {
+				padding: 25px;
+				box-sizing: border-box;
+			}
+		}
+
+		&.active {
+			display: block;
+		}
+	}
+
+	footer {
+
 	}
 }
