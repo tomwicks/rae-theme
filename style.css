@@ -4307,93 +4307,537 @@ a.cbc-menu-link {
 .territory-voting {
   background: #2F2F2F; }
   /* line 4, sass/_pages/_vote.scss */
+  .territory-voting .twitter a, .territory-voting .facebook a {
+    width: 35px;
+    height: 35px;
+    margin-top: -2px;
+    display: block;
+    border-bottom: 0;
+    background: url("images/vote/twitter.svg") no-repeat top center;
+    background-size: 100% 100%; }
+  /* line 14, sass/_pages/_vote.scss */
+  .territory-voting .facebook a {
+    background: url("images/vote/facebook.svg") no-repeat top center;
+    background-size: 100% 100%; }
+  /* line 19, sass/_pages/_vote.scss */
+  .territory-voting .facebook, .territory-voting .twitter {
+    padding: 0; }
+  /* line 23, sass/_pages/_vote.scss */
+  .territory-voting .facebook {
+    margin-left: 15px; }
+  /* line 27, sass/_pages/_vote.scss */
   .territory-voting .col-4 {
     width: 33%;
     margin: 0 auto;
     display: block;
     float: none; }
-  /* line 11, sass/_pages/_vote.scss */
+  /* line 34, sass/_pages/_vote.scss */
   .territory-voting a:hover {
     text-decoration: none; }
-  /* line 15, sass/_pages/_vote.scss */
+  /* line 38, sass/_pages/_vote.scss */
   .territory-voting header {
     background: #242424;
     height: 63px;
     text-transform: uppercase; }
-    /* line 20, sass/_pages/_vote.scss */
+    /* line 43, sass/_pages/_vote.scss */
     .territory-voting header h1 {
       font-size: 1em;
       color: #fff;
       padding: 20px 0;
       float: left; }
-    /* line 27, sass/_pages/_vote.scss */
+    /* line 50, sass/_pages/_vote.scss */
     .territory-voting header nav {
       float: right;
       padding: 0; }
-      /* line 31, sass/_pages/_vote.scss */
+      /* line 54, sass/_pages/_vote.scss */
       .territory-voting header nav ul {
         padding: 0; }
-      /* line 35, sass/_pages/_vote.scss */
+      /* line 58, sass/_pages/_vote.scss */
       .territory-voting header nav li {
         list-style-type: none;
         float: left;
         padding: 2px 0;
         margin-left: 30px; }
-      /* line 42, sass/_pages/_vote.scss */
+      /* line 65, sass/_pages/_vote.scss */
       .territory-voting header nav a {
         color: #fff;
         font-family: 'dinbold', sans-serif;
         text-decoration: none;
         border-bottom: 1px solid #FFED70; }
-      /* line 49, sass/_pages/_vote.scss */
-      .territory-voting header nav .twitter a, .territory-voting header nav .facebook a {
-        width: 35px;
-        height: 35px;
-        margin-top: -2px;
-        display: block;
-        border-bottom: 0;
-        background: url("images/vote/twitter.svg") no-repeat top center;
-        background-size: 100% 100%; }
-      /* line 59, sass/_pages/_vote.scss */
-      .territory-voting header nav .facebook a {
-        background: url("images/vote/facebook.svg") no-repeat top center;
-        background-size: 100% 100%; }
-      /* line 64, sass/_pages/_vote.scss */
-      .territory-voting header nav .facebook, .territory-voting header nav .twitter {
-        padding: 0; }
-      /* line 68, sass/_pages/_vote.scss */
-      .territory-voting header nav .facebook {
-        margin-left: 15px; }
-  /* line 75, sass/_pages/_vote.scss */
+    @media only screen and (max-width: 768px) {
+      /* line 38, sass/_pages/_vote.scss */
+      .territory-voting header {
+        height: 50px; }
+        /* line 76, sass/_pages/_vote.scss */
+        .territory-voting header h1 {
+          font-size: 1em;
+          margin-bottom: 0px;
+          padding: 15px 0; }
+        /* line 82, sass/_pages/_vote.scss */
+        .territory-voting header nav {
+          display: none; } }
+  @media only screen and (max-width: 768px) {
+    /* line 88, sass/_pages/_vote.scss */
+    .territory-voting .container {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      float: none; } }
+  /* line 98, sass/_pages/_vote.scss */
   .territory-voting .description .g--third {
     margin: 0 auto;
     display: block;
     float: none; }
-  /* line 81, sass/_pages/_vote.scss */
+  /* line 104, sass/_pages/_vote.scss */
   .territory-voting .description h2 {
     font-size: 1.5em;
     line-height: 1.1;
     color: #fff;
     text-align: center;
     margin: 18px 0; }
-  /* line 89, sass/_pages/_vote.scss */
+  /* line 112, sass/_pages/_vote.scss */
   .territory-voting .description p {
     color: #fff;
     margin-top: 10px;
     line-height: 1.4;
     text-align: center;
     text-transform: uppercase; }
-  /* line 97, sass/_pages/_vote.scss */
+  /* line 120, sass/_pages/_vote.scss */
   .territory-voting .description p a {
     opacity: 1;
     color: #fff;
     text-align: center;
     border-bottom: 1px solid #FFED70; }
-  /* line 105, sass/_pages/_vote.scss */
+  @media only screen and (max-width: 768px) {
+    /* line 97, sass/_pages/_vote.scss */
+    .territory-voting .description {
+      display: none; } }
+  /* line 132, sass/_pages/_vote.scss */
+  .territory-voting .description-mobile {
+    background: #292929;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding: 25px 0 25px 0;
+    display: none; }
+    /* line 140, sass/_pages/_vote.scss */
+    .territory-voting .description-mobile h2 {
+      text-align: left;
+      color: #fff; }
+    /* line 145, sass/_pages/_vote.scss */
+    .territory-voting .description-mobile a.about-rae-link {
+      color: #fff;
+      border-bottom: 2px solid #E3D46F;
+      cursor: pointer; }
+    /* line 151, sass/_pages/_vote.scss */
+    .territory-voting .description-mobile a.show-hidden {
+      text-transform: uppercase;
+      color: #E3D46F;
+      text-decoration: none;
+      font-family: 'dinbold', sans-serif;
+      margin: 6px 0;
+      display: inline-block;
+      cursor: pointer; }
+    /* line 161, sass/_pages/_vote.scss */
+    .territory-voting .description-mobile .hidden-expanded {
+      display: none; }
+    /* line 165, sass/_pages/_vote.scss */
+    .territory-voting .description-mobile .hidden-expanded.active {
+      display: block; }
+    @media only screen and (max-width: 768px) {
+      /* line 132, sass/_pages/_vote.scss */
+      .territory-voting .description-mobile {
+        display: block; }
+        /* line 172, sass/_pages/_vote.scss */
+        .territory-voting .description-mobile h2 {
+          margin-top: 0;
+          font-size: 1.4em;
+          margin-bottom: 10px; }
+        /* line 178, sass/_pages/_vote.scss */
+        .territory-voting .description-mobile p {
+          font-size: 1.1em;
+          color: #fff;
+          opacity: 0.8; } }
+  /* line 186, sass/_pages/_vote.scss */
+  .territory-voting .mobile-results {
+    width: 100%;
+    height: auto;
+    display: none;
+    padding: 25px 0;
+    border-top: 3px solid #191919; }
+    /* line 193, sass/_pages/_vote.scss */
+    .territory-voting .mobile-results .mobile-vote {
+      display: block;
+      cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0px 17px;
+      overflow: auto;
+      height: auto;
+      background: #FD6A6C;
+      margin-bottom: 20px;
+      position: relative; }
+      /* line 205, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote.north-america {
+        background: #4BA0F5; }
+      /* line 209, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote.south-america {
+        background: #A4E37C; }
+      /* line 213, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote.europe {
+        background: #3DE1AC; }
+      /* line 217, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote.africa {
+        background: #5ADDFD; }
+      /* line 221, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote.asia-oceania {
+        background: #FD6A6C; }
+      /* line 225, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote:after {
+        height: 3px;
+        width: 100%;
+        content: "";
+        display: block;
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      /* line 236, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-holder {
+        width: 100%;
+        height: 100%;
+        float: left;
+        display: block;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        top: 0; }
+      /* line 247, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph {
+        background: rgba(0, 0, 0, 0.2);
+        height: 100%;
+        width: 14%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-1 {
+        width: 1%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-2 {
+        width: 2%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-3 {
+        width: 3%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-4 {
+        width: 4%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-5 {
+        width: 5%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-6 {
+        width: 6%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-7 {
+        width: 7%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-8 {
+        width: 8%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-9 {
+        width: 9%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-10 {
+        width: 10%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-11 {
+        width: 11%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-12 {
+        width: 12%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-13 {
+        width: 13%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-14 {
+        width: 14%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-15 {
+        width: 15%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-16 {
+        width: 16%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-17 {
+        width: 17%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-18 {
+        width: 18%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-19 {
+        width: 19%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-20 {
+        width: 20%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-21 {
+        width: 21%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-22 {
+        width: 22%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-23 {
+        width: 23%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-24 {
+        width: 24%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-25 {
+        width: 25%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-26 {
+        width: 26%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-27 {
+        width: 27%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-28 {
+        width: 28%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-29 {
+        width: 29%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-30 {
+        width: 30%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-31 {
+        width: 31%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-32 {
+        width: 32%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-33 {
+        width: 33%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-34 {
+        width: 34%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-35 {
+        width: 35%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-36 {
+        width: 36%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-37 {
+        width: 37%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-38 {
+        width: 38%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-39 {
+        width: 39%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-40 {
+        width: 40%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-41 {
+        width: 41%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-42 {
+        width: 42%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-43 {
+        width: 43%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-44 {
+        width: 44%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-45 {
+        width: 45%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-46 {
+        width: 46%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-47 {
+        width: 47%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-48 {
+        width: 48%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-49 {
+        width: 49%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-50 {
+        width: 50%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-51 {
+        width: 51%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-52 {
+        width: 52%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-53 {
+        width: 53%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-54 {
+        width: 54%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-55 {
+        width: 55%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-56 {
+        width: 56%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-57 {
+        width: 57%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-58 {
+        width: 58%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-59 {
+        width: 59%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-60 {
+        width: 60%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-61 {
+        width: 61%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-62 {
+        width: 62%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-63 {
+        width: 63%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-64 {
+        width: 64%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-65 {
+        width: 65%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-66 {
+        width: 66%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-67 {
+        width: 67%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-68 {
+        width: 68%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-69 {
+        width: 69%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-70 {
+        width: 70%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-71 {
+        width: 71%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-72 {
+        width: 72%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-73 {
+        width: 73%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-74 {
+        width: 74%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-75 {
+        width: 75%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-76 {
+        width: 76%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-77 {
+        width: 77%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-78 {
+        width: 78%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-79 {
+        width: 79%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-80 {
+        width: 80%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-81 {
+        width: 81%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-82 {
+        width: 82%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-83 {
+        width: 83%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-84 {
+        width: 84%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-85 {
+        width: 85%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-86 {
+        width: 86%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-87 {
+        width: 87%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-88 {
+        width: 88%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-89 {
+        width: 89%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-90 {
+        width: 90%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-91 {
+        width: 91%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-92 {
+        width: 92%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-93 {
+        width: 93%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-94 {
+        width: 94%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-95 {
+        width: 95%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-96 {
+        width: 96%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-97 {
+        width: 97%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-98 {
+        width: 98%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-99 {
+        width: 99%; }
+      /* line 255, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote .bar-graph-100 {
+        width: 100%; }
+      /* line 260, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote h3 {
+        position: relative;
+        font-family: 'dinbold', sans-serif;
+        color: #fff;
+        z-index: 5;
+        font-size: 1em;
+        float: left; }
+      /* line 269, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results .mobile-vote h3.right {
+        float: right; }
+    @media only screen and (max-width: 768px) {
+      /* line 186, sass/_pages/_vote.scss */
+      .territory-voting .mobile-results {
+        display: block; } }
+  /* line 279, sass/_pages/_vote.scss */
   .territory-voting .article-map {
     width: 100%;
-    height: 100vh; }
-    /* line 109, sass/_pages/_vote.scss */
+    height: calc(100vh - 200px);
+    box-sizing: border-box; }
+    /* line 284, sass/_pages/_vote.scss */
     .territory-voting .article-map .world-container {
       width: 1150px;
       height: 550px;
@@ -4401,48 +4845,863 @@ a.cbc-menu-link {
       top: 64%;
       left: 51%;
       transform: translate(-50%, -50%); }
-    /* line 118, sass/_pages/_vote.scss */
+    /* line 293, sass/_pages/_vote.scss */
     .territory-voting .article-map .world-inner-container-inner {
       width: 100%;
       height: 100%;
       position: relative; }
-    /* line 124, sass/_pages/_vote.scss */
+    /* line 299, sass/_pages/_vote.scss */
     .territory-voting .article-map .country {
       cursor: pointer;
       position: absolute;
       height: 100px;
       width: 100px;
-      opacity: 0.8; }
-      /* line 131, sass/_pages/_vote.scss */
+      opacity: 0.9;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      /* line 311, sass/_pages/_vote.scss */
       .territory-voting .article-map .country:hover {
         opacity: 1; }
-    /* line 136, sass/_pages/_vote.scss */
+    /* line 320, sass/_pages/_vote.scss */
+    .territory-voting .article-map .fake-btn {
+      background: #fff;
+      font-family: 'dinbold', sans-serif;
+      padding: 9px 19px;
+      text-transform: uppercase;
+      display: block;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      font-size: 0.9em;
+      top: 0;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      left: 0;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      /* line 339, sass/_pages/_vote.scss */
+      .territory-voting .article-map .fake-btn:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 2px; }
+    /* line 351, sass/_pages/_vote.scss */
+    .territory-voting .article-map .fake-btn.hide {
+      display: none; }
+    /* line 355, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-marker {
+      display: block;
+      width: 70px;
+      height: 110px;
+      background: url("images/vote/marker.png") no-repeat;
+      background-size: 100% auto;
+      background-position: 0 0;
+      position: absolute;
+      top: 50px;
+      left: 100px; }
+      /* line 366, sass/_pages/_vote.scss */
+      .territory-voting .article-map .percentage-marker h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'dinbold', sans-serif;
+        color: #4BA0F5;
+        margin-top: 20px;
+        font-size: 1.5em; }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-1 {
+      transform: scale(1.01);
+      -ms-transform: scale(1.01);
+      /* IE 9 */
+      -webkit-transform: scale(1.01);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-2 {
+      transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      /* IE 9 */
+      -webkit-transform: scale(1.02);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-3 {
+      transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      /* IE 9 */
+      -webkit-transform: scale(1.03);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-4 {
+      transform: scale(1.04);
+      -ms-transform: scale(1.04);
+      /* IE 9 */
+      -webkit-transform: scale(1.04);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-5 {
+      transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      /* IE 9 */
+      -webkit-transform: scale(1.05);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-6 {
+      transform: scale(1.06);
+      -ms-transform: scale(1.06);
+      /* IE 9 */
+      -webkit-transform: scale(1.06);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-7 {
+      transform: scale(1.07);
+      -ms-transform: scale(1.07);
+      /* IE 9 */
+      -webkit-transform: scale(1.07);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-8 {
+      transform: scale(1.08);
+      -ms-transform: scale(1.08);
+      /* IE 9 */
+      -webkit-transform: scale(1.08);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-9 {
+      transform: scale(1.09);
+      -ms-transform: scale(1.09);
+      /* IE 9 */
+      -webkit-transform: scale(1.09);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-10 {
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      /* IE 9 */
+      -webkit-transform: scale(1.1);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-11 {
+      transform: scale(1.11);
+      -ms-transform: scale(1.11);
+      /* IE 9 */
+      -webkit-transform: scale(1.11);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-12 {
+      transform: scale(1.12);
+      -ms-transform: scale(1.12);
+      /* IE 9 */
+      -webkit-transform: scale(1.12);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-13 {
+      transform: scale(1.13);
+      -ms-transform: scale(1.13);
+      /* IE 9 */
+      -webkit-transform: scale(1.13);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-14 {
+      transform: scale(1.14);
+      -ms-transform: scale(1.14);
+      /* IE 9 */
+      -webkit-transform: scale(1.14);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-15 {
+      transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      /* IE 9 */
+      -webkit-transform: scale(1.15);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-16 {
+      transform: scale(1.16);
+      -ms-transform: scale(1.16);
+      /* IE 9 */
+      -webkit-transform: scale(1.16);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-17 {
+      transform: scale(1.17);
+      -ms-transform: scale(1.17);
+      /* IE 9 */
+      -webkit-transform: scale(1.17);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-18 {
+      transform: scale(1.18);
+      -ms-transform: scale(1.18);
+      /* IE 9 */
+      -webkit-transform: scale(1.18);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-19 {
+      transform: scale(1.19);
+      -ms-transform: scale(1.19);
+      /* IE 9 */
+      -webkit-transform: scale(1.19);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-20 {
+      transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      /* IE 9 */
+      -webkit-transform: scale(1.2);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-21 {
+      transform: scale(1.21);
+      -ms-transform: scale(1.21);
+      /* IE 9 */
+      -webkit-transform: scale(1.21);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-22 {
+      transform: scale(1.22);
+      -ms-transform: scale(1.22);
+      /* IE 9 */
+      -webkit-transform: scale(1.22);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-23 {
+      transform: scale(1.23);
+      -ms-transform: scale(1.23);
+      /* IE 9 */
+      -webkit-transform: scale(1.23);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-24 {
+      transform: scale(1.24);
+      -ms-transform: scale(1.24);
+      /* IE 9 */
+      -webkit-transform: scale(1.24);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-25 {
+      transform: scale(1.25);
+      -ms-transform: scale(1.25);
+      /* IE 9 */
+      -webkit-transform: scale(1.25);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-26 {
+      transform: scale(1.26);
+      -ms-transform: scale(1.26);
+      /* IE 9 */
+      -webkit-transform: scale(1.26);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-27 {
+      transform: scale(1.27);
+      -ms-transform: scale(1.27);
+      /* IE 9 */
+      -webkit-transform: scale(1.27);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-28 {
+      transform: scale(1.28);
+      -ms-transform: scale(1.28);
+      /* IE 9 */
+      -webkit-transform: scale(1.28);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-29 {
+      transform: scale(1.29);
+      -ms-transform: scale(1.29);
+      /* IE 9 */
+      -webkit-transform: scale(1.29);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-30 {
+      transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      /* IE 9 */
+      -webkit-transform: scale(1.3);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-31 {
+      transform: scale(1.31);
+      -ms-transform: scale(1.31);
+      /* IE 9 */
+      -webkit-transform: scale(1.31);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-32 {
+      transform: scale(1.32);
+      -ms-transform: scale(1.32);
+      /* IE 9 */
+      -webkit-transform: scale(1.32);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-33 {
+      transform: scale(1.33);
+      -ms-transform: scale(1.33);
+      /* IE 9 */
+      -webkit-transform: scale(1.33);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-34 {
+      transform: scale(1.34);
+      -ms-transform: scale(1.34);
+      /* IE 9 */
+      -webkit-transform: scale(1.34);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-35 {
+      transform: scale(1.35);
+      -ms-transform: scale(1.35);
+      /* IE 9 */
+      -webkit-transform: scale(1.35);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-36 {
+      transform: scale(1.36);
+      -ms-transform: scale(1.36);
+      /* IE 9 */
+      -webkit-transform: scale(1.36);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-37 {
+      transform: scale(1.37);
+      -ms-transform: scale(1.37);
+      /* IE 9 */
+      -webkit-transform: scale(1.37);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-38 {
+      transform: scale(1.38);
+      -ms-transform: scale(1.38);
+      /* IE 9 */
+      -webkit-transform: scale(1.38);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-39 {
+      transform: scale(1.39);
+      -ms-transform: scale(1.39);
+      /* IE 9 */
+      -webkit-transform: scale(1.39);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-40 {
+      transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      /* IE 9 */
+      -webkit-transform: scale(1.4);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-41 {
+      transform: scale(1.41);
+      -ms-transform: scale(1.41);
+      /* IE 9 */
+      -webkit-transform: scale(1.41);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-42 {
+      transform: scale(1.42);
+      -ms-transform: scale(1.42);
+      /* IE 9 */
+      -webkit-transform: scale(1.42);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-43 {
+      transform: scale(1.43);
+      -ms-transform: scale(1.43);
+      /* IE 9 */
+      -webkit-transform: scale(1.43);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-44 {
+      transform: scale(1.44);
+      -ms-transform: scale(1.44);
+      /* IE 9 */
+      -webkit-transform: scale(1.44);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-45 {
+      transform: scale(1.45);
+      -ms-transform: scale(1.45);
+      /* IE 9 */
+      -webkit-transform: scale(1.45);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-46 {
+      transform: scale(1.46);
+      -ms-transform: scale(1.46);
+      /* IE 9 */
+      -webkit-transform: scale(1.46);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-47 {
+      transform: scale(1.47);
+      -ms-transform: scale(1.47);
+      /* IE 9 */
+      -webkit-transform: scale(1.47);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-48 {
+      transform: scale(1.48);
+      -ms-transform: scale(1.48);
+      /* IE 9 */
+      -webkit-transform: scale(1.48);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-49 {
+      transform: scale(1.49);
+      -ms-transform: scale(1.49);
+      /* IE 9 */
+      -webkit-transform: scale(1.49);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-50 {
+      transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      /* IE 9 */
+      -webkit-transform: scale(1.5);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-51 {
+      transform: scale(1.51);
+      -ms-transform: scale(1.51);
+      /* IE 9 */
+      -webkit-transform: scale(1.51);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-52 {
+      transform: scale(1.52);
+      -ms-transform: scale(1.52);
+      /* IE 9 */
+      -webkit-transform: scale(1.52);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-53 {
+      transform: scale(1.53);
+      -ms-transform: scale(1.53);
+      /* IE 9 */
+      -webkit-transform: scale(1.53);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-54 {
+      transform: scale(1.54);
+      -ms-transform: scale(1.54);
+      /* IE 9 */
+      -webkit-transform: scale(1.54);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-55 {
+      transform: scale(1.55);
+      -ms-transform: scale(1.55);
+      /* IE 9 */
+      -webkit-transform: scale(1.55);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-56 {
+      transform: scale(1.56);
+      -ms-transform: scale(1.56);
+      /* IE 9 */
+      -webkit-transform: scale(1.56);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-57 {
+      transform: scale(1.57);
+      -ms-transform: scale(1.57);
+      /* IE 9 */
+      -webkit-transform: scale(1.57);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-58 {
+      transform: scale(1.58);
+      -ms-transform: scale(1.58);
+      /* IE 9 */
+      -webkit-transform: scale(1.58);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-59 {
+      transform: scale(1.59);
+      -ms-transform: scale(1.59);
+      /* IE 9 */
+      -webkit-transform: scale(1.59);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-60 {
+      transform: scale(1.6);
+      -ms-transform: scale(1.6);
+      /* IE 9 */
+      -webkit-transform: scale(1.6);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-61 {
+      transform: scale(1.61);
+      -ms-transform: scale(1.61);
+      /* IE 9 */
+      -webkit-transform: scale(1.61);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-62 {
+      transform: scale(1.62);
+      -ms-transform: scale(1.62);
+      /* IE 9 */
+      -webkit-transform: scale(1.62);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-63 {
+      transform: scale(1.63);
+      -ms-transform: scale(1.63);
+      /* IE 9 */
+      -webkit-transform: scale(1.63);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-64 {
+      transform: scale(1.64);
+      -ms-transform: scale(1.64);
+      /* IE 9 */
+      -webkit-transform: scale(1.64);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-65 {
+      transform: scale(1.65);
+      -ms-transform: scale(1.65);
+      /* IE 9 */
+      -webkit-transform: scale(1.65);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-66 {
+      transform: scale(1.66);
+      -ms-transform: scale(1.66);
+      /* IE 9 */
+      -webkit-transform: scale(1.66);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-67 {
+      transform: scale(1.67);
+      -ms-transform: scale(1.67);
+      /* IE 9 */
+      -webkit-transform: scale(1.67);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-68 {
+      transform: scale(1.68);
+      -ms-transform: scale(1.68);
+      /* IE 9 */
+      -webkit-transform: scale(1.68);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-69 {
+      transform: scale(1.69);
+      -ms-transform: scale(1.69);
+      /* IE 9 */
+      -webkit-transform: scale(1.69);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-70 {
+      transform: scale(1.7);
+      -ms-transform: scale(1.7);
+      /* IE 9 */
+      -webkit-transform: scale(1.7);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-71 {
+      transform: scale(1.71);
+      -ms-transform: scale(1.71);
+      /* IE 9 */
+      -webkit-transform: scale(1.71);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-72 {
+      transform: scale(1.72);
+      -ms-transform: scale(1.72);
+      /* IE 9 */
+      -webkit-transform: scale(1.72);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-73 {
+      transform: scale(1.73);
+      -ms-transform: scale(1.73);
+      /* IE 9 */
+      -webkit-transform: scale(1.73);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-74 {
+      transform: scale(1.74);
+      -ms-transform: scale(1.74);
+      /* IE 9 */
+      -webkit-transform: scale(1.74);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-75 {
+      transform: scale(1.75);
+      -ms-transform: scale(1.75);
+      /* IE 9 */
+      -webkit-transform: scale(1.75);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-76 {
+      transform: scale(1.76);
+      -ms-transform: scale(1.76);
+      /* IE 9 */
+      -webkit-transform: scale(1.76);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-77 {
+      transform: scale(1.77);
+      -ms-transform: scale(1.77);
+      /* IE 9 */
+      -webkit-transform: scale(1.77);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-78 {
+      transform: scale(1.78);
+      -ms-transform: scale(1.78);
+      /* IE 9 */
+      -webkit-transform: scale(1.78);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-79 {
+      transform: scale(1.79);
+      -ms-transform: scale(1.79);
+      /* IE 9 */
+      -webkit-transform: scale(1.79);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-80 {
+      transform: scale(1.8);
+      -ms-transform: scale(1.8);
+      /* IE 9 */
+      -webkit-transform: scale(1.8);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-81 {
+      transform: scale(1.81);
+      -ms-transform: scale(1.81);
+      /* IE 9 */
+      -webkit-transform: scale(1.81);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-82 {
+      transform: scale(1.82);
+      -ms-transform: scale(1.82);
+      /* IE 9 */
+      -webkit-transform: scale(1.82);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-83 {
+      transform: scale(1.83);
+      -ms-transform: scale(1.83);
+      /* IE 9 */
+      -webkit-transform: scale(1.83);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-84 {
+      transform: scale(1.84);
+      -ms-transform: scale(1.84);
+      /* IE 9 */
+      -webkit-transform: scale(1.84);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-85 {
+      transform: scale(1.85);
+      -ms-transform: scale(1.85);
+      /* IE 9 */
+      -webkit-transform: scale(1.85);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-86 {
+      transform: scale(1.86);
+      -ms-transform: scale(1.86);
+      /* IE 9 */
+      -webkit-transform: scale(1.86);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-87 {
+      transform: scale(1.87);
+      -ms-transform: scale(1.87);
+      /* IE 9 */
+      -webkit-transform: scale(1.87);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-88 {
+      transform: scale(1.88);
+      -ms-transform: scale(1.88);
+      /* IE 9 */
+      -webkit-transform: scale(1.88);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-89 {
+      transform: scale(1.89);
+      -ms-transform: scale(1.89);
+      /* IE 9 */
+      -webkit-transform: scale(1.89);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-90 {
+      transform: scale(1.9);
+      -ms-transform: scale(1.9);
+      /* IE 9 */
+      -webkit-transform: scale(1.9);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-91 {
+      transform: scale(1.91);
+      -ms-transform: scale(1.91);
+      /* IE 9 */
+      -webkit-transform: scale(1.91);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-92 {
+      transform: scale(1.92);
+      -ms-transform: scale(1.92);
+      /* IE 9 */
+      -webkit-transform: scale(1.92);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-93 {
+      transform: scale(1.93);
+      -ms-transform: scale(1.93);
+      /* IE 9 */
+      -webkit-transform: scale(1.93);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-94 {
+      transform: scale(1.94);
+      -ms-transform: scale(1.94);
+      /* IE 9 */
+      -webkit-transform: scale(1.94);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-95 {
+      transform: scale(1.95);
+      -ms-transform: scale(1.95);
+      /* IE 9 */
+      -webkit-transform: scale(1.95);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-96 {
+      transform: scale(1.96);
+      -ms-transform: scale(1.96);
+      /* IE 9 */
+      -webkit-transform: scale(1.96);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-97 {
+      transform: scale(1.97);
+      -ms-transform: scale(1.97);
+      /* IE 9 */
+      -webkit-transform: scale(1.97);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-98 {
+      transform: scale(1.98);
+      -ms-transform: scale(1.98);
+      /* IE 9 */
+      -webkit-transform: scale(1.98);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-99 {
+      transform: scale(1.99);
+      -ms-transform: scale(1.99);
+      /* IE 9 */
+      -webkit-transform: scale(1.99);
+      /* Safari */ }
+    /* line 379, sass/_pages/_vote.scss */
+    .territory-voting .article-map .percentage-100 {
+      transform: scale(2);
+      -ms-transform: scale(2);
+      /* IE 9 */
+      -webkit-transform: scale(2);
+      /* Safari */ }
+    /* line 387, sass/_pages/_vote.scss */
     .territory-voting .article-map .country.north-america {
       width: 462px; }
-    /* line 140, sass/_pages/_vote.scss */
+      /* line 390, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.north-america .fake-btn {
+        color: #4BA0F5;
+        top: 170px;
+        left: 40px; }
+    /* line 397, sass/_pages/_vote.scss */
     .territory-voting .article-map .country.south-america {
       width: 188px;
       top: 236px;
       left: 165px; }
-    /* line 146, sass/_pages/_vote.scss */
+      /* line 402, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.south-america .percentage-marker {
+        top: 50px;
+        left: 50px; }
+        /* line 406, sass/_pages/_vote.scss */
+        .territory-voting .article-map .country.south-america .percentage-marker h3 {
+          color: #A2E576; }
+      /* line 411, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.south-america .fake-btn {
+        color: #A2E576;
+        top: 170px;
+        left: 0px; }
+    /* line 418, sass/_pages/_vote.scss */
     .territory-voting .article-map .country.africa {
       top: 169px;
       width: 278px;
       left: 401px; }
-    /* line 152, sass/_pages/_vote.scss */
+      /* line 423, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.africa .percentage-marker {
+        top: 50px;
+        left: 110px; }
+        /* line 427, sass/_pages/_vote.scss */
+        .territory-voting .article-map .country.africa .percentage-marker h3 {
+          color: #52DDFF; }
+      /* line 432, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.africa .fake-btn {
+        color: #52DDFF;
+        top: 160px;
+        left: 80px; }
+    /* line 439, sass/_pages/_vote.scss */
     .territory-voting .article-map .country.asia-oceania {
       left: 561px;
       top: 14px;
       width: 538px; }
-    /* line 158, sass/_pages/_vote.scss */
+      /* line 444, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.asia-oceania .percentage-marker {
+        top: 50px;
+        left: 180px; }
+        /* line 448, sass/_pages/_vote.scss */
+        .territory-voting .article-map .country.asia-oceania .percentage-marker h3 {
+          color: #FD6A6C; }
+      /* line 453, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.asia-oceania .fake-btn {
+        color: #FD6A6C;
+        top: 170px;
+        left: 125px; }
+    /* line 460, sass/_pages/_vote.scss */
     .territory-voting .article-map .country.europe {
+      z-index: 1;
       left: 428px;
       top: 17px;
       width: 264px; }
-    /* line 164, sass/_pages/_vote.scss */
+      /* line 466, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.europe .percentage-marker {
+        top: 0px; }
+        /* line 469, sass/_pages/_vote.scss */
+        .territory-voting .article-map .country.europe .percentage-marker h3 {
+          color: #30E2AB; }
+      /* line 474, sass/_pages/_vote.scss */
+      .territory-voting .article-map .country.europe .fake-btn {
+        color: #30E2AB;
+        top: 110px;
+        left: 75px; }
+    /* line 481, sass/_pages/_vote.scss */
     .territory-voting .article-map .terms-conditions {
       bottom: 0; }
-  /* line 169, sass/_pages/_vote.scss */
+    @media only screen and (max-width: 768px) {
+      /* line 279, sass/_pages/_vote.scss */
+      .territory-voting .article-map {
+        display: none; } }
+  /* line 490, sass/_pages/_vote.scss */
   .territory-voting .form {
     display: none;
     position: fixed;
@@ -4453,10 +5712,11 @@ a.cbc-menu-link {
     width: 100%;
     height: 100vh;
     z-index: 5; }
-    /* line 180, sass/_pages/_vote.scss */
+    /* line 501, sass/_pages/_vote.scss */
     .territory-voting .form .form-container {
       width: 33%;
       z-index: 10;
+      display: none;
       height: auto;
       position: absolute;
       background: #212121;
@@ -4465,13 +5725,13 @@ a.cbc-menu-link {
       left: 50%;
       padding: 0;
       transform: translate(-50%, -50%); }
-      /* line 192, sass/_pages/_vote.scss */
+      /* line 514, sass/_pages/_vote.scss */
       .territory-voting .form .form-container .form-header {
         width: 100%;
         height: 120px;
         margin-top: 0;
         position: relative; }
-        /* line 198, sass/_pages/_vote.scss */
+        /* line 520, sass/_pages/_vote.scss */
         .territory-voting .form .form-container .form-header h3 {
           font-size: 1.3em;
           line-height: 1.1;
@@ -4481,53 +5741,268 @@ a.cbc-menu-link {
           bottom: 25px;
           left: 25px;
           margin: 0; }
-      /* line 210, sass/_pages/_vote.scss */
-      .territory-voting .form .form-container input[type="text"] {
-        background: #212121;
+      /* line 532, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 0px;
+        height: 0; }
+      /* line 539, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+      /* line 547, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container .form-body {
+        padding: 25px; }
+        /* line 550, sass/_pages/_vote.scss */
+        .territory-voting .form .form-container .form-body p.large {
+          color: #fff;
+          font-size: 1.3em; }
+        /* line 555, sass/_pages/_vote.scss */
+        .territory-voting .form .form-container .form-body h2 {
+          color: #fff;
+          font-size: 1.5em; }
+        /* line 560, sass/_pages/_vote.scss */
+        .territory-voting .form .form-container .form-body h4 {
+          border-bottom: 2px solid #4BA0F5;
+          color: #fff;
+          display: inline-block;
+          margin: 0; }
+        /* line 567, sass/_pages/_vote.scss */
+        .territory-voting .form .form-container .form-body .share-btn {
+          width: 100%;
+          display: block;
+          padding: 14px;
+          font-size: 0.9;
+          text-align: center;
+          box-sizing: border-box;
+          background: #4BA0F5;
+          color: #fff;
+          cursor: pointer;
+          position: relative;
+          margin: 20px 0;
+          font-family: 'dinbold', sans-serif;
+          text-transform: uppercase; }
+          /* line 582, sass/_pages/_vote.scss */
+          .territory-voting .form .form-container .form-body .share-btn:last-child {
+            margin-bottom: 0; }
+          /* line 586, sass/_pages/_vote.scss */
+          .territory-voting .form .form-container .form-body .share-btn:after {
+            content: "";
+            display: block;
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: rgba(0, 0, 0, 0.3); }
+          /* line 598, sass/_pages/_vote.scss */
+          .territory-voting .form .form-container .form-body .share-btn.facebook-btn {
+            background: #3E5D97; }
+          /* line 602, sass/_pages/_vote.scss */
+          .territory-voting .form .form-container .form-body .share-btn.twitter-btn {
+            background: #2AA3EF; }
+      /* line 608, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container #region {
+        display: none; }
+      /* line 612, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container input[type="submit"] {
+        background: #298BFB;
+        display: block;
+        border: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        padding: 10px 20px;
+        margin-bottom: 25px;
+        background: #ff6969;
+        text-transform: uppercase;
+        float: right;
+        margin-top: 25px;
+        font-family: 'dinBold', sans-serif;
         color: #fff;
-        padding: 5px 5px 5px 5px;
-        height: auto; }
-      /* line 220, sass/_pages/_vote.scss */
+        cursor: pointer;
+        width: 100%;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px; }
+      /* line 631, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container label {
+        color: #fff; }
+      /* line 635, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container input[type="text"], .territory-voting .form .form-container input[type="select"], .territory-voting .form .form-container input[type="email"] {
+        background: #151515;
+        border: solid 2px #404040;
+        color: #fff;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        position: relative;
+        width: calc(100% - 20px);
+        box-sizing: initial;
+        padding: 7px 10px; }
+      /* line 646, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container fieldset.half {
+        margin: 0;
+        border: 0;
+        width: calc(50% - 13px);
+        margin-bottom: 11px;
+        float: left;
+        padding: 0; }
+      /* line 656, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container fieldset.half:nth-child(even) {
+        float: right; }
+      /* line 662, sass/_pages/_vote.scss */
       .territory-voting .form .form-container.north-america .form-header {
         background: url("images/vote/north-america-black.svg") no-repeat;
         background-color: #4BA0F5;
         background-size: 400% 400%;
         background-position: 30% -300px; }
-      /* line 227, sass/_pages/_vote.scss */
+      /* line 669, sass/_pages/_vote.scss */
       .territory-voting .form .form-container.north-america input:focus {
         border: 2px solid #4BA0F5;
         color: #4BA0F5; }
-      /* line 234, sass/_pages/_vote.scss */
+      /* line 674, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.north-america select:focus {
+        border: 2px solid #4BA0F5; }
+      /* line 678, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.north-america input[type="submit"] {
+        background: #4BA0F5; }
+      /* line 686, sass/_pages/_vote.scss */
       .territory-voting .form .form-container.south-america .form-header {
         background: url("images/vote/south-america-black.svg") no-repeat top right;
         background-color: #A2E576;
         background-size: 370% 370%;
         background-position: 40% 40%; }
-      /* line 241, sass/_pages/_vote.scss */
+      /* line 693, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.south-america input:focus {
+        border: 2px solid #A2E576;
+        color: #A2E576; }
+      /* line 698, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.south-america select:focus {
+        border: 2px solid #A2E576; }
+      /* line 702, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.south-america input[type="submit"] {
+        background: #A2E576; }
+      /* line 708, sass/_pages/_vote.scss */
       .territory-voting .form .form-container.europe .form-header {
         background: url("images/vote/europe-black.svg") no-repeat top right;
         background-color: #30E2AB;
         background-size: 200% 200%;
         background-position: 30% 50%; }
-      /* line 248, sass/_pages/_vote.scss */
+      /* line 715, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.europe input:focus {
+        border: 2px solid #30E2AB;
+        color: #30E2AB; }
+      /* line 720, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.europe select:focus {
+        border: 2px solid #30E2AB; }
+      /* line 724, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.europe input[type="submit"] {
+        background: #30E2AB; }
+      /* line 730, sass/_pages/_vote.scss */
       .territory-voting .form .form-container.africa .form-header {
         background: url("images/vote/africa-black.svg") no-repeat top right;
         background-color: #52DDFF;
         background-size: 370% 370%;
         background-position: 40% 40%; }
-      /* line 254, sass/_pages/_vote.scss */
+      /* line 737, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.africa input:focus {
+        border: 2px solid #52DDFF;
+        color: #52DDFF; }
+      /* line 742, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.africa select:focus {
+        border: 2px solid #52DDFF; }
+      /* line 746, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.africa input[type="submit"] {
+        background: #52DDFF; }
+      /* line 752, sass/_pages/_vote.scss */
       .territory-voting .form .form-container.asia-oceania .form-header {
         background: url("images/vote/asia-oceania-black.svg") no-repeat top right;
         background-color: #FD6A6C;
         background-size: 390% 390%;
         background-position: 30% 45%; }
-      /* line 261, sass/_pages/_vote.scss */
+      /* line 759, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.asia-oceania input:focus {
+        border: 2px solid #FD6A6C;
+        color: #FD6A6C; }
+      /* line 764, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.asia-oceania select:focus {
+        border: 2px solid #FD6A6C; }
+      /* line 768, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.asia-oceania input[type="submit"] {
+        background: #FD6A6C; }
+      /* line 773, sass/_pages/_vote.scss */
       .territory-voting .form .form-container form {
         padding: 25px;
         box-sizing: border-box; }
-    /* line 267, sass/_pages/_vote.scss */
-    .territory-voting .form.active {
+      /* line 778, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container .form-body {
+        color: #fff; }
+      /* line 782, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.about-rae ul {
+        padding: 20px 0; }
+      /* line 786, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.about-rae h4, .territory-voting .form .form-container.about-vote h4 {
+        border-bottom: 2px solid #FFED70; }
+      /* line 790, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.about-rae ul li {
+        float: left;
+        list-style-type: none; }
+      /* line 795, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container.about-rae ul li .button {
+        padding: 10px 20px;
+        background: #FFED70;
+        color: #fff;
+        margin-right: 20px;
+        margin-top: -5px;
+        display: block;
+        color: #212121;
+        position: relative;
+        text-transform: uppercase; }
+        /* line 806, sass/_pages/_vote.scss */
+        .territory-voting .form .form-container.about-rae ul li .button:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: rgba(0, 0, 0, 0.2);
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+    /* line 819, sass/_pages/_vote.scss */
+    .territory-voting .form .form-container.success {
+      display: none; }
+    /* line 823, sass/_pages/_vote.scss */
+    .territory-voting .form .form-container.active {
       display: block; }
+    /* line 827, sass/_pages/_vote.scss */
+    .territory-voting .form .success {
+      display: none; }
+    /* line 831, sass/_pages/_vote.scss */
+    .territory-voting .form .about-rae {
+      display: none; }
+    /* line 835, sass/_pages/_vote.scss */
+    .territory-voting .form .about-rae.active {
+      display: block; }
+    /* line 839, sass/_pages/_vote.scss */
+    .territory-voting .form .success.active {
+      display: block; }
+    @media only screen and (max-width: 768px) {
+      /* line 845, sass/_pages/_vote.scss */
+      .territory-voting .form .form-container {
+        width: 100%;
+        box-shadow: 0;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%); } }
+  /* line 855, sass/_pages/_vote.scss */
+  .territory-voting .form.active {
+    display: block; }
 
 /* line 1, sass/_pages/_bsmr_league.scss */
 .bsmr-league footer {
