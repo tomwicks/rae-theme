@@ -1,5 +1,38 @@
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+
 .territory-voting {
 	background: #2F2F2F;
+
+	a {
+		cursor: pointer;
+	}
 
 	.twitter a, .facebook a {
 		width: 35px;
@@ -25,7 +58,7 @@
 	}
 
 	.col-4 {
-		width: 33%;
+		width: 368px;
 		margin: 0 auto;
 		display: block;
 		float: none;
@@ -126,6 +159,12 @@
 
 		@include media-query(tablet-portrait-and-smaller) {
 			display: none;
+		}
+
+		@include media-query(gigantic) {
+			h2 {
+				padding-top: 40px;
+			}
 		}
 	}
 
@@ -276,18 +315,34 @@
 		}
 	}
 
+	.mobile-results.hidden {
+		display: none;
+	}
+
 	.article-map {
 		width: 100%;
-		height: calc(100vh - 200px);
+		height: calc(100vh - 211px);
+		padding: 0;
 		box-sizing: border-box;
 
+		@include media-query(gigantic) {
+			height: calc(100vh - 250px);
+		}
+
 		.world-container {
-			width: 1150px;
-			height: 550px;
+			width: 1045px;
+			height: 505px;
 			position: absolute;
-			top: 64%;
-			left: 51%;
+			top: calc(50% + 100px);
+			left: 50%;
 			transform: translate(-50%, -50%);
+		}
+
+		@include media-query(gigantic) {
+			.world-container {
+				height: 553px;
+				width: 1141px;
+			}
 		}
 
 		.world-inner-container-inner {
@@ -307,20 +362,12 @@
 		    -ms-transition: all .3s ease;
 		    -o-transition: all .3s ease;
 		    transition: all .3s ease;
-
-			&:hover {
-				opacity: 1;
-			}
-
-			&:hover .fake-btn {
-				
-			}
 		}
 
 		.fake-btn {
 			background: #fff;
 			font-family: 'dinbold', sans-serif;
-			padding: 9px 19px;
+			padding: 9px 16px;
 			text-transform: uppercase;
 			display: block;
 			width: auto;
@@ -385,19 +432,23 @@
 		}
 
 		.country.north-america {
-			width: 462px;
+			width: 438px;
 
 			.fake-btn {
 				color: #4BA0F5;
 				top: 170px;
 				left: 40px;
 			}
+
+			@include media-query(gigantic) {
+				width: 481px;
+			}
 		}
 
 		.country.south-america {
-			width: 188px;
-			top: 236px;
-			left: 165px;
+			width: 178px;
+			top: 224px;
+			left: 156px;
 
 			.percentage-marker {
 				top: 50px;
@@ -413,12 +464,18 @@
 				top: 170px;
 				left: 0px;
 			}
+
+			@include media-query(gigantic) {
+				width: 195px;
+				top: 246px;
+				left: 171px;
+			}
 		}
 
 		.country.africa {
-			top: 169px;
-			width: 278px;
-			left: 401px;
+			top: 160px;
+			width: 264px;
+			left: 380px;
 
 			.percentage-marker {
 				top: 50px;
@@ -434,12 +491,18 @@
 				top: 160px;
 				left: 80px;
 			}
+
+			@include media-query(gigantic) {
+				top: 176px;
+				width: 290px;
+				left: 418px;
+			}
 		}
 
 		.country.asia-oceania {
-			left: 561px;
-			top: 14px;
-			width: 538px;
+			left: 532px;
+			top: 13px;
+			width: 511px;
 
 			.percentage-marker {
 				top: 50px;
@@ -455,13 +518,19 @@
 				top: 170px;
 				left:125px;
 			}
+
+			@include media-query(gigantic) {
+				top: 14px;
+				width: 562px;
+				left: 585px;
+			}
 		}
 
 		.country.europe {
 			z-index: 1;
-			left: 428px;
-			top: 17px;
-			width: 264px;
+			left: 406px;
+			top: 16px;
+			width: 250px;
 
 			.percentage-marker {
 				top: 0px;
@@ -475,6 +544,12 @@
 				color: #30E2AB;
 				top: 110px;
 				left: 75px;
+			}
+
+			@include media-query(gigantic) {
+				top: 18px;
+				width: 275px;
+				left: 446px;
 			}
 		}
 
@@ -500,6 +575,7 @@
 
 		.form-container {
 			width: 33%;
+			max-width: 425px;
 			z-index: 10;
 			display: none;
 			height: auto;
@@ -527,6 +603,27 @@
 					left: 25px;
 					margin: 0;
 				}
+			}
+
+			.email-validation {
+				float: right;
+				color: #FB6B6F;
+				font-size: 1em;
+				text-transform: uppercase;
+				font-size: 0.8em;
+				display: none;
+
+				&.active {
+					display: block;
+				}
+			}
+
+			label {
+				float: left;
+			}
+
+			.email-label {
+				margin-top: 0;
 			}
 
 			.videoWrapper {
@@ -562,6 +659,13 @@
 					color: #fff;
 					display: inline-block;
 					margin: 0;
+				}
+
+				h5 {
+					color: #fff;
+					text-transform: uppercase;
+					font-weight: 300;
+					font-size: 1em;
 				}
 
 				.share-btn {
@@ -849,6 +953,34 @@
 				left: 0;
 				transform: translate(0%, 0%);
 			}
+		}
+	}
+
+	.vote-footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		padding: 30px 0;
+		color: #fff;
+		text-transform: uppercase;
+
+		a {
+			font-family: 'dinBold', sans-serif;
+			color: #fff;
+			border-bottom: 1px solid #FEEC79;
+			font-size: 0.9em;
+		}
+
+		.container {
+			position: relative;
+		}
+	}
+
+	@include media-query(tablet-portrait-and-smaller) {
+		.vote-footer {
+			display: none;
 		}
 	}
 

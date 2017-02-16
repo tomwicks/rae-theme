@@ -8,6 +8,12 @@
     <meta property="fb:pages" content="740301802687856"/>
     <title><?php wp_title( '', true, 'right' ); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@runanempire">
+    <meta name="twitter:creator" content="@runanempire">
+    <meta name="twitter:title" content="Where Should Run An Empire Launch Next?">
+    <meta name="twitter:description" content="Vote for your region as the next territory where Run An Empire is available to play.">
+    <meta name="twitter:image" content="http://www.runanempire.com/wp-content/themes/rae-theme/images/vote/share-map.png">
     <!--[if lt IE 10]>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/iefixes.css" />
     <![endif]-->

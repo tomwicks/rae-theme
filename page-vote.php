@@ -1,4 +1,4 @@
-<?php/*** Template Name: Voting */?>
+<?php /*** Template Name: Voting */ ?>
 <?php include('slim-header.php'); ?>
 	<?php
   		global $wpdb;
@@ -81,7 +81,7 @@
 				$percentagenumber = round($percentage, 1);
 				$percentagerounded = round($percentage, 1) . '% ';
 				
-				echo '<div name="'.$region.'" id="'.$region.'" class="vote-btn mobile-vote '.$region.'"><div class="bar-holder"><div class="bar-graph bar-graph-' .$percentagenumber. '"></div></div><h3>Vote for ' . $region . '</h3><h3 class="right">' .$percentagerounded. '</h3></div>';
+				echo '<div name="'.$region.'" id="'.$region.'" class="vote-btn mobile-vote '.$region.'"><div class="bar-holder"><div class="bar-graph bar-graph-' .round($percentagenumber, 0). '"></div></div><h3>Vote for ' . $region . '</h3><h3 class="right">' .$percentagerounded. '</h3></div>';
 			}
 		}
       	?>
@@ -115,7 +115,7 @@
 	      			<div class="hidden-expanded">
 		      			<p>From 6th February 2017, we are opening the floor to you to help us decide where to launch Run an Empire next.</p>
 	  					<p>Vote for your chosen area (you don’t have to live there) by clicking the vote button and filling out the form. </p>
-	  					<p>We’ll ask you to specify a country, but the vote counts for the overall area.This page shows how each area is stacking up. At the end of the competition, we’ll announce the winner and let you know what’s to come.</p>
+	  					<p>We’ll ask you to specify a country, but the vote counts for the overall area. This page shows how each area is stacking up. At the end of the competition, we’ll announce the winner and let you know what’s to come.</p>
   					</div>
       		</div>
       	</section>
@@ -187,7 +187,8 @@
 				        	<label>Last Name</label>
 				        	<input name="lastname" placeholder="Weasley" id="lastName" type="text">
 				        </fieldset>
-			        	<label>Email</label>
+			        	<label class="email-label">Email</label>
+			        	<span class="email-validation">Email is invalid</span>
 			        	<input name="email" id="email" placeholder="r.weasley@gryfrundor.com" type="email">
 			        	<select name="region" id="region">
 			        	<option disabled selected value>Select an region...</option>
@@ -220,26 +221,9 @@
       					<h4>Share and win!</h4>
       					<p class="large">Share using your unique URL and get a chance to win an Amazon voucher every week.</p>
       					<input id="referral-box" type="text" value="<?php echo get_site_url(); ?>/vote?ref=">
-      					<a class="share-btn facebook-btn">Share URL On Facebook</a>
-      					<a class="share-btn twitter-btn">Share URL on Twitter</a>
+      					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frunanempire.com/vote" class="share-btn facebook-btn">Share URL On Facebook</a>
+      					<a href="https://twitter.com/home?status=http%3A//www.runanempire.com/vote" class="share-btn twitter-btn">Share URL on Twitter</a>
       					<a class="share-btn email-btn">Email URL</a>
-      				</div>
-      			</div>
-      			<div class="form-container about-rae">
-      			<div class="videoWrapper">
-      			<iframe width="560" height="315" src=" 
-https://www.youtube.com/embed/vwq9u1JjX0c?" frameborder="0" 
-allowfullscreen></iframe>
-					</div>
-      				<div class="form-body">
-      					<h4>Run An Empire</h4>
-      					<h2>A Real World Strategy Running Game.</h2>
-      					<p class="large">Race against others to control the most territory in your local environment.</p>
-      					<ul>
-	      					<li><a class="button" href="">View Site</a></li>
-	      					<li class="twitter"><a target="_blank" href="https://twitter.com/runanempire"></a></li>
-	  						<li class="facebook"><a target="_blank" href="https://www.facebook.com/RunAnEmpire/"></a></li>
-  						</ul>
       				</div>
       			</div>
       			<div class="form-container about-rae">
@@ -267,6 +251,20 @@ allowfullscreen></iframe>
       					<p>We’ll ask you to specify a country, but the vote counts for the overall area.This page shows how each area is stacking up. At the end of the competition, we’ll announce the winner and let you know what’s to come.</p>
       				</div>
       			</div>
+      			<div class="form-container terms-conditions">
+      				<div class="form-body">
+      					<h4>Terms &amp; Conditions</h4>
+      					<h5>Android Development</h5>
+      					<p>This competition is to determine where we will launch next for both iOS and Android. However, we can’t guarantee that these will happen at the same time – while we are working towards completing an Android version for Spring 2017, failing this we will launch only on iOS. Don’t worry Android friends, your vote absolutely still counts – the winning area will be the first location to play on Android once it’s ready.</p>
+      					<h5>Global Release</h5>
+      					<p>We’ll ask you to specify a country, but the vote counts for the overall area.This page shows how each area is stacking up. At the end of the competition, we’ll announce the winner and let you know what’s to come.</p>
+      				</div>
+      			</div>
+      	</section>
+      	<section class="vote-footer">
+      		<div class="container">
+      			<a class="terms-link">Terms &amp; Conditions</a>
+      		</div>
       	</section>
       </article>
     </main>
