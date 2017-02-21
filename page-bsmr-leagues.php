@@ -4,9 +4,9 @@
       <nav class="bsmr-nav">
         <div class="container">
           <ul>
-            <li><a href="<?php echo site_url(); ?>/bsmr/bsmr-leagues" class="bsmr-menu-btn active">Summary</a></li>
-            <li><a href="<?php echo site_url(); ?>/bsmr/team-league" class="bsmr-menu-btn">Team League</a></li>
-            <li><a href="<?php echo site_url(); ?>/bsmr/player-league" class="bsmr-menu-btn">Player League</a></li>
+            <li><a href="<?php echo site_url(); ?>/university" class="bsmr-menu-btn active">Summary</a></li>
+            <!-- <li><a href="/university/team-league" class="bsmr-menu-btn">Team League</a></li> -->
+            <!-- <li><a href="/university/player-league" class="bsmr-menu-btn">Player League</a></li> -->
           </ul>
         </div>
       </nav>
@@ -14,16 +14,11 @@
         <section class="bsrm-description">
           <div class="container">
             <div class="g--two--third">
-              <h2>Welcome to the Run An Empire Training Challenge.</h2>
-              <p>In the month building up to the Bloomberg Square Mile Relay, Run An Empire is offering you the chance to go head to head against other teams by competing to capture and control the most territory on your running route.</p><p>To join the Run An Empire Square Mile challenge, start by signing up using the <a href="<?php echo site_url(); ?>/bsmr/sign-up">form here.</a></p><p>All you have to do is use Run An Empire whilst you’re training between 22nd August and 22nd September. You can use it alongside your existing fitness app. Winning teams and individuals will be announced on the day.</p>
-              <ul class="bsmr-logo-strip">
-                <li class="partner-logos"><a class="rae-logo" href="http://www.runanempire.com" target="_blank"><img src="<?php echo get_bloginfo('template_directory');?>/images/bsmr/rae-logo.png"></a></li>
-                <li class="partner-logos"><a class="cc-logo" href="https://www.crowdcube.com" target="_blank"><img src="<?php echo get_bloginfo('template_directory');?>/images/bsmr/cc-logo.png"></a>
-                <li class="partner-logos"><a class="bsmr-logo" href="https://www.squaremilerelay.com/london/" target="_blank"><img src="<?php echo get_bloginfo('template_directory');?>/images/bsmr/bsmr-logo.png"></a></li>
-              </ul>
+              <h2>Welcome to the Run An Empire University Challenge.</h2>
+              <p>Run An Empire is offering you the chance to go head to head against other Universities by competing to capture and control the most territory on your running route.</p><p>To join the Run An Empire University Challenge, start by signing up using the <a href="<?php echo site_url(); ?>/university/sign-up">form here.</a></p><p>All you have to do is use Run An Empire whilst you’re training. You can use it alongside your existing fitness app.</p>
             </div>
             <div class="g--third g--last">
-              <img class="bsmr-image" src="<?php echo get_bloginfo('template_directory');?>/images/bsmr/gauntlet.png">
+              <img style="padding-top: 0" class="bsmr-image" src="<?php echo get_bloginfo('template_directory');?>/images/bsmr/gauntlet.png">
             </div>
           </div>
         </section>
@@ -90,7 +85,7 @@
                     fclose($handle);
                 } ?>
               </table>
-              <a href="<?php echo site_url(); ?>/bsmr/team-league#bsmr-main" class="link-btn-one center active">View All</a>
+              <!-- <a href="/bsmr/team-league#bsmr-main" class="link-btn-one center active">View All</a> -->
             </div>
             <div class="league-table-container team-distance">
               <table class="league-table">
@@ -149,7 +144,7 @@
 
                 } ?>
               </table>
-              <a href="<?php echo site_url(); ?>/bsmr/team-league#bsmr-main" class="link-btn-one center active">View All</a>
+              <!-- <a href="/bsmr/team-league#bsmr-main" class="link-btn-one center active">View All</a> -->
             </div>
           </div>
         </section>
@@ -210,7 +205,7 @@
                        fclose($handle);
                   } ?>
               </table>
-              <a href="<?php echo site_url(); ?>/bsmr/player-league#bsmr-main" class="link-btn-one center active">View All</a>
+              <!-- <a href="/bsmr/player-league#bsmr-main" class="link-btn-one center active">View All</a> -->
             </div>
             <div class="league-table-container player-distance">
               <table class="league-table">
@@ -266,7 +261,7 @@
 
                   } ?>
               </table>
-              <a href="<?php echo site_url(); ?>/bsmr/player-league#bsmr-main" class="link-btn-one center active">View All</a>
+              <!-- <a href="/bsmr/player-league#bsmr-main" class="link-btn-one center active">View All</a> -->
             </div>
           </div>
         </section>

@@ -5938,7 +5938,7 @@ a.cbc-menu-link {
         float: left;
         padding: 0; }
       /* line 760, sass/_pages/_vote.scss */
-      .territory-voting .form .form-container fieldset.half:nth-child(even) {
+      .territory-voting .form .form-container fieldset.half:nth-child(odd) {
         float: right; }
       /* line 766, sass/_pages/_vote.scss */
       .territory-voting .form .form-container.north-america .form-header {

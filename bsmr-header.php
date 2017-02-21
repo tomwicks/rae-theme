@@ -1,12 +1,12 @@
 <?php 
  
   $teams = array(
-    'pippadip' => 'Capital Group Companies Global 1',
-    'birdy' => 'CROWDCUBE',
-    'ollieknights' => 'Square Mile Team',
-    'emmafairhurst21' => 'Lloyds Bank',
-    'bethb' => 'BNP Paribas Real Estate UK',
-    'alexcoulson' => 'Square Mile Team'
+    'pippadip' => 'London School of Economics',
+    'birdy' => 'Kings College',
+    'ollieknights' => 'Goldsmiths University',
+    'emmafairhurst21' => 'Imperial College London',
+    'bethb' => 'University Arts London',
+    'alexcoulson' => 'Goldsmiths University'
   );
 
 ?>
@@ -21,7 +21,7 @@
     <section class="bsmr-hero">
       <div class="container">
         <div class="g--third">
-          <h2>Bloomberg Square Mile Relay</h2>
+          <h2>Run An Empire University Leagues</h2>
           <h4>Powered by Run An Empire</h4>
         </div>
       </div>
